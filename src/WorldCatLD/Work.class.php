@@ -23,7 +23,7 @@ class Work
         } else {
             $workId = Work::ID_PREFIX . $id;
         }
-        $this->fetchResourceData($workId);
+        $this->fetchWorkData($workId);
     }
 
     public function findByOclcNumber($id)
@@ -31,7 +31,7 @@ class Work
         $manifestation = new Manifestation();
         $manifestation->findByOclcNumber($id);
         $this->addExample($manifestation);
-        $this->fetchResourceData();
+        $this->fetchWorkData($this->getId());
     }
 
     public function findByIsbn($isbn)
@@ -39,7 +39,7 @@ class Work
         $manifestation = new Manifestation();
         $manifestation->findByIsbn($isbn);
         $this->addExample($manifestation);
-        $this->fetchResourceData();
+        $this->fetchWorkData($this->getId());
     }
 
     public function addExample($example)
@@ -80,6 +80,15 @@ class Work
             }
 
         }
+    }
+
+    protected function fetchWorkData($id)
+    {
+        if (strpos($id, self::ID_PREFIX) === 0) {
+            $location = $this->getRedirectLocation($id);
+            $id = $location[0];
+        }
+        $this->fetchResourceData($id);
     }
 
 }

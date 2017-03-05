@@ -79,6 +79,8 @@ trait Graph
         $subject = $this->getSubjectData();
         if (isset($subject[$name])) {
             return $this->hydrateProperty($name);
+        } elseif (isset($subject['@' . $name])) {
+            return $this->hydrateProperty('@' . $name);
         }
     }
 
@@ -102,6 +104,11 @@ trait Graph
 
     protected function hydratePropertyValue($value)
     {
+        if (is_array($value)) {
+            $value['@id'] = '_' . uniqid();
+            $entity = new Entity($value);
+            return $entity;
+        }
         if (strpos($value, 'http') === 0) {
             $resource = $this->getResourceFromGraph($value);
             if ($resource) {

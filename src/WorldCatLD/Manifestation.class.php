@@ -44,9 +44,7 @@ class Manifestation
             throw new \InvalidArgumentException('ISBN length not 10 or 13');
         }
         $url = "{$this->baseUrl}isbn/{$isbn}";
-        print_r($url);
         $location = $this->getRedirectLocation($url);
-        print_r($location);
         if (!empty($location)) {
             $manifestationUrl = explode('/', $location[0]);
             $oclcNumber = array_pop($manifestationUrl);
