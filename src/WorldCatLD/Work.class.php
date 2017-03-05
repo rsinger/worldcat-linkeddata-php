@@ -66,6 +66,10 @@ class Work
         $this->hydrateExamples(
             array_diff($this->getSubjectData()['workExample'], array_keys($this->examples))
         );
+        // Not all resources retrieved?
+        if (count($this->getSubjectData()['workExample']) > count($this->examples)) {
+            return $this->getWorkExample();
+        }
         return $this->examples;
     }
 
@@ -92,4 +96,10 @@ class Work
         $this->fetchResourceData($id);
     }
 
+    public function toXid()
+    {
+        $xid = new XidResponse();
+        $xid->addManifestations($this->getWorkExample());
+        return $xid;
+    }
 }
