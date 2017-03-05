@@ -15,6 +15,9 @@ class Manifestation
     /** @var  Work */
     protected $work;
 
+    /**
+     * @param string $id
+     */
     public function findById($id)
     {
         $url = parse_url($id);
@@ -26,6 +29,10 @@ class Manifestation
         }
     }
 
+    /**
+     * @param string $id
+     * @throws \InvalidArgumentException
+     */
     public function findByOclcNumber($id)
     {
         $id = preg_replace('/\D/', '', $id);
@@ -37,6 +44,10 @@ class Manifestation
         $this->id = $url;
     }
 
+    /**
+     * @param string $isbn
+     * @throws \InvalidArgumentException
+     */
     public function findByIsbn($isbn)
     {
         $isbn = preg_replace('/[^0-9Xx]/', '', $isbn);
@@ -52,7 +63,9 @@ class Manifestation
         }
     }
 
-
+    /**
+     * @return string
+     */
     public function getWorkId()
     {
         if (!isset($this->workId)) {
@@ -61,6 +74,9 @@ class Manifestation
         return $this->workId;
     }
 
+    /**
+     * @return Work
+     */
     public function getExampleOfWork()
     {
         if (!isset($this->work)) {
@@ -72,13 +88,16 @@ class Manifestation
         return $this->work;
     }
 
+    /**
+     * @return Work
+     */
     public function getWork()
     {
         return $this->getExampleOfWork();
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getOclcNumber()
     {
@@ -97,6 +116,9 @@ class Manifestation
         $this->work = $work;
     }
 
+    /**
+     * @return array
+     */
     public function toXid()
     {
         $data = [];
@@ -118,6 +140,9 @@ class Manifestation
         return $data;
     }
 
+    /**
+     * @return array
+     */
     public function getIsbns()
     {
         foreach ($this->graph as $graph) {

@@ -14,16 +14,9 @@ trait Resource
     protected $httpClient;
     protected $baseUrl = 'http://www.worldcat.org/';
 
-    public function __construct(array $options = [])
-    {
-        if (isset($options['baseUrl'])) {
-            $this->baseUrl = $options['baseUrl'];
-            if (substr($options['baseUrl'], -1) !== '/') {
-                $this->baseUrl .= '/';
-            }
-        }
-    }
-
+    /**
+     * @return HttpClient
+     */
     protected function getHttpClient()
     {
         if (!isset($this->httpClient)) {
@@ -32,6 +25,10 @@ trait Resource
         return $this->httpClient;
     }
 
+    /**
+     * @param string|null $url
+     * @throws exceptions\ResourceNotFoundException
+     */
     protected function fetchResourceData($url = null)
     {
         if (!$url) {
@@ -46,6 +43,11 @@ trait Resource
         }
     }
 
+    /**
+     * @param string $url
+     * @return array
+     * @throws exceptions\ResourceNotFoundException
+     */
     protected function getRedirectLocation($url)
     {
         $redirectRequest = $this->getHttpClient()->head($url, ['allow_redirects' => false]);
@@ -55,11 +57,14 @@ trait Resource
         } elseif ($redirectRequest->getStatusCode() === 301) {
             $location = $redirectRequest->getHeader('Location');
             return $this->getRedirectLocation($location[0]);
-        } else {
-            throw new ResourceNotFoundException();
         }
+        throw new ResourceNotFoundException();
     }
 
+    /**
+     * @param array $ids
+     * @return array
+     */
     protected function fetchResources(array $ids)
     {
         $client = $this->getHttpClient();
@@ -67,7 +72,7 @@ trait Resource
         foreach ($ids as $id) {
             $promises[$id] = $client->getAsync($id . '.jsonld', ['Accept' => 'application/ld+json']);
         }
-        return Promise\unwrap($promises);
+        return Promise\settle($promises)->wait();
     }
 
 

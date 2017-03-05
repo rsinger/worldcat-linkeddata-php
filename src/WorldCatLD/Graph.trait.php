@@ -16,11 +16,17 @@ trait Graph
 
     protected $subjectDataIndex;
 
+    /**
+     * @return array
+     */
     public function getGraphData()
     {
         return ['@context' => $this->context, '@graph' => $this->graph];
     }
 
+    /**
+     * @return mixed
+     */
     public function getSubjectData()
     {
         if (!isset($this->subjectDataIndex)) {
@@ -56,7 +62,7 @@ trait Graph
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getId()
     {
@@ -66,15 +72,25 @@ trait Graph
         return $this->id;
     }
 
+    /**
+     * @return array|string
+     */
     public function getType()
     {
         return $this->getSubjectData()['@type'];
     }
 
+    /**
+     * @return array
+     */
     public function getPropertyNames() {
         return array_keys($this->getSubjectData());
     }
 
+    /**
+     * @param string $name
+     * @return array|Entity
+     */
     public function __get($name) {
         $subject = $this->getSubjectData();
         if (isset($subject[$name])) {
@@ -84,6 +100,10 @@ trait Graph
         }
     }
 
+    /**
+     * @param string $name
+     * @return array|Entity|string
+     */
     protected function hydrateProperty($name)
     {
         if (method_exists($this, 'get' . ucfirst($name))) {
@@ -102,6 +122,10 @@ trait Graph
         }
     }
 
+    /**
+     * @param string $value
+     * @return Entity|string
+     */
     protected function hydratePropertyValue($value)
     {
         if (is_array($value)) {
@@ -119,6 +143,10 @@ trait Graph
         return $value;
     }
 
+    /**
+     * @param string $id
+     * @return array|null
+     */
     protected function getResourceFromGraph($id)
     {
         foreach ($this->graph as $graph) {

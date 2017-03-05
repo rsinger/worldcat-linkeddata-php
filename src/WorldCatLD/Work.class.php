@@ -15,6 +15,9 @@ class Work
     /** @var Manifestation[]  */
     protected $examples = [];
 
+    /**
+     * @param string $id
+     */
     public function findById($id)
     {
         $url = parse_url($id);
@@ -26,6 +29,9 @@ class Work
         $this->fetchWorkData($workId);
     }
 
+    /**
+     * @param string $id
+     */
     public function findByOclcNumber($id)
     {
         $manifestation = new Manifestation();
@@ -34,6 +40,9 @@ class Work
         $this->fetchWorkData($this->getId());
     }
 
+    /**
+     * @param string $isbn
+     */
     public function findByIsbn($isbn)
     {
         $manifestation = new Manifestation();
@@ -42,6 +51,9 @@ class Work
         $this->fetchWorkData($this->getId());
     }
 
+    /**
+     * @param Manifestation|array $example
+     */
     public function addExample($example)
     {
         if (is_array($example)) {
@@ -63,30 +75,52 @@ class Work
      */
     public function getWorkExample()
     {
-        $this->hydrateExamples(
-            array_diff($this->getSubjectData()['workExample'], array_keys($this->examples))
-        );
-        // Not all resources retrieved?
-        if (count($this->getSubjectData()['workExample']) > count($this->examples)) {
-            return $this->getWorkExample();
-        }
+        $this->hydrateExamples($this->getUnresolvedWorkExamples());
         return $this->examples;
     }
 
+    /**
+     * @param array $ids
+     */
     protected function hydrateExamples(array $ids)
     {
-
         if (!empty($ids)) {
             $resources = $this->fetchResources($ids);
             foreach ($resources as $id => $response) {
-                $manifestation = new Manifestation();
-                $manifestation->setSourceData(json_decode($response->getBody(), true));
-                $this->addExample($manifestation);
-            }
+                if ($response['state'] === 'fulfilled') {
 
+                    if ($response['value']->getStatusCode() === 200) {
+                        $manifestation = new Manifestation();
+                        $manifestation->setSourceData(json_decode($response['value']->getBody(), true));
+                        $this->addExample($manifestation);
+                    } elseif ($response['value']->getStatusCode() === 404) {
+                        $this->examples[$id] = null;
+                    }
+                }
+            }
         }
     }
 
+    /**
+     * @return array
+     */
+    public function getUnresolvedWorkExamples()
+    {
+        return array_diff($this->getSubjectData()['workExample'], array_keys($this->examples));
+    }
+
+    /**
+     * @return bool
+     */
+    public function hasUnresolvedWorkExamples()
+    {
+        $unresolvedWorkExamples = $this->getUnresolvedWorkExamples();
+        return !empty($unresolvedWorkExamples);
+    }
+
+    /**
+     * @param string $id
+     */
     protected function fetchWorkData($id)
     {
         if (strpos($id, self::ID_PREFIX) === 0) {
@@ -96,6 +130,9 @@ class Work
         $this->fetchResourceData($id);
     }
 
+    /**
+     * @return XidResponse
+     */
     public function toXid()
     {
         $xid = new XidResponse();
