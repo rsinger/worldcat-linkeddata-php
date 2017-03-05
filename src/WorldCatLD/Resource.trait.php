@@ -65,7 +65,7 @@ trait Resource
         $client = $this->getHttpClient();
         $promises = [];
         foreach ($ids as $id) {
-            $promises[$id] = $client->getAsync($id);
+            $promises[$id] = $client->getAsync($id . '.jsonld', ['Accept' => 'application/ld+json']);
         }
         return Promise\unwrap($promises);
     }

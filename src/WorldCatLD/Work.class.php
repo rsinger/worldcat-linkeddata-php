@@ -64,18 +64,19 @@ class Work
     public function getWorkExample()
     {
         $this->hydrateExamples(
-            array_diff(array_keys($this->examples), $this->getSourceData()['workExample'])
+            array_diff($this->getSubjectData()['workExample'], array_keys($this->examples))
         );
         return $this->examples;
     }
 
     protected function hydrateExamples(array $ids)
     {
+
         if (!empty($ids)) {
             $resources = $this->fetchResources($ids);
-            foreach ($resources as $id => $data) {
+            foreach ($resources as $id => $response) {
                 $manifestation = new Manifestation();
-                $manifestation->setSourceData(json_encode($data, true));
+                $manifestation->setSourceData(json_decode($response->getBody(), true));
                 $this->addExample($manifestation);
             }
 
