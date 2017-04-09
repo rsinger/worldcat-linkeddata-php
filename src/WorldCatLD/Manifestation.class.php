@@ -57,9 +57,7 @@ class Manifestation
         $url = "{$this->baseUrl}isbn/{$isbn}";
         $location = $this->getRedirectLocation($url);
         if (!empty($location)) {
-            $manifestationUrl = explode('/', $location[0]);
-            $oclcNumber = array_pop($manifestationUrl);
-            $this->findByOclcNumber($oclcNumber);
+            $this->findById($location[0]);
         }
     }
 
@@ -81,7 +79,7 @@ class Manifestation
     {
         if (!isset($this->work)) {
             $workId = $this->getWorkId();
-            $this->work = new Work();
+            $this->work = $this->createWork();
             $this->work->findById($workId);
             $this->work->addExample($this);
         }
@@ -151,5 +149,10 @@ class Manifestation
             }
         }
         return [];
+    }
+    
+    protected function createWork()
+    {
+        return new Work();
     }
 }
