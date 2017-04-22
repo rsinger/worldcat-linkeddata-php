@@ -172,4 +172,35 @@ class ManifestationTest extends \PHPUnit_Framework_TestCase
         
         $manifestation->getWork();
     }
+    
+    public function testGetOclcNumber()
+    {
+        /** @var Manifestation|PHPUnit_Framework_MockObject_MockObject **/
+        $manifestation = $this->getMockBuilder('\WorldCatLD\Manifestation')
+            ->setMethods(['getId'])
+            ->getMock();        
+        $manifestation->expects($this->exactly(2))
+            ->method('getId')
+            ->will(
+                $this->onConsecutiveCalls(
+                        null, 'http://www.worldcat.org/oclc/1234'
+                    )
+                );
+        
+        $this->assertNull($manifestation->getOclcNumber());
+        $this->assertEquals('1234', $manifestation->getOclcNumber());
+    }
+    
+    public function testGetIsbns()
+    {
+        $manifestation = new Manifestation();
+        $dir = dirname(__FILE__);
+        $jsonld = file_get_contents($dir . '/fixtures/919758206.jsonld');        
+        $sourceData = json_decode($jsonld, true);
+        $manifestation->setSourceData($sourceData);
+        $this->assertEquals(
+            ['9783037196519', '3037196513'],
+            $manifestation->getIsbns()
+        );
+    }
 }

@@ -100,8 +100,11 @@ class Manifestation
     public function getOclcNumber()
     {
         if (!isset($this->oclcNumber)) {
-            $uriParts = explode('/', $this->getId());
-            $this->oclcNumber = array_pop($uriParts);
+            $id = $this->getId();
+            if ($id) {
+                $uriParts = explode('/', $id);
+                $this->oclcNumber = array_pop($uriParts);
+            }
         }
         return $this->oclcNumber;
     }
