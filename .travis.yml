@@ -8,5 +8,3 @@ php:
 install: 
     - composer install
     - composer dumpautoload
-script:
-    - phpunit --bootstrap=./vendor/autoload.php ./tests
