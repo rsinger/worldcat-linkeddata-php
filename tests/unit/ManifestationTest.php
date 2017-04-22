@@ -3,8 +3,9 @@
 namespace tests\unit;
 
 use \WorldCatLD\Manifestation;
+use PHPUnit\Framework\TestCase;
 
-class ManifestationTest extends \PHPUnit_Framework_TestCase
+class ManifestationTest extends TestCase
 {
 	public function testClassDefinitions()
 	{
