@@ -28,8 +28,8 @@
 		"psy/psysh" : "~0.8"
 	},
 	"autoload" : {
-		"psr-0" : {
-			"WorldCatLD" : "src"
+		"psr-4" : {
+			"WorldCatLD\\" : "src"
 		}
 	}
 }
