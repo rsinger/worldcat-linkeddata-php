@@ -1,0 +1,187 @@
+{
+  "@graph" : [ {
+    "@id" : "http://dewey.info/class/515.7222/e23/",
+    "@type" : "schema:Intangible"
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Person/lablee_olivier_1980",
+    "@type" : "schema:Person",
+    "birthDate" : "1980",
+    "familyName" : "Lablée",
+    "givenName" : "Olivier",
+    "name" : "Olivier Lablée"
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Series/ems_textbooks_in_mathematics",
+    "@type" : "bgn:PublicationSeries",
+    "hasPart" : "http://www.worldcat.org/oclc/919758206",
+    "name" : [ "EMS textbooks in mathematics", "EMS textbooks in mathematics." ]
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/linear_operators",
+    "@type" : "schema:Intangible",
+    "name" : {
+      "@language" : "en",
+      "@value" : "Linear operators"
+    }
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/mathematics_calculus",
+    "@type" : "schema:Intangible",
+    "name" : {
+      "@language" : "en",
+      "@value" : "MATHEMATICS / Calculus"
+    }
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/mathematics_mathematical_analysis",
+    "@type" : "schema:Intangible",
+    "name" : {
+      "@language" : "en",
+      "@value" : "MATHEMATICS / Mathematical Analysis"
+    }
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemannian_manifolds",
+    "@type" : "schema:Intangible",
+    "name" : {
+      "@language" : "en",
+      "@value" : "Riemannian manifolds"
+    }
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_geometry",
+    "@type" : "schema:Intangible",
+    "name" : {
+      "@language" : "en",
+      "@value" : "Spectral geometry"
+    }
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_theory_mathematics",
+    "@type" : "schema:Intangible",
+    "name" : {
+      "@language" : "en",
+      "@value" : "Spectral theory (Mathematics)"
+    }
+  }, {
+    "@id" : "http://id.loc.gov/vocabulary/countries/sz",
+    "@type" : "schema:Place",
+    "identifier" : "sz"
+  }, {
+    "@id" : "http://worldcat.org/isbn/9783037196519",
+    "@type" : "schema:ProductModel",
+    "isbn" : [ "9783037196519", "3037196513" ]
+  }, {
+    "@id" : "http://www.worldcat.org/oclc/904652996",
+    "@type" : "schema:CreativeWork",
+    "description" : "Print version:",
+    "isSimilarTo" : "http://www.worldcat.org/oclc/919758206",
+    "label" : "Spectral theory in Riemannian geometry."
+  }, {
+    "@id" : "http://www.worldcat.org/oclc/919758206",
+    "@type" : [ "schema:CreativeWork", "schema:MediaObject", "schema:Book" ],
+    "oclcnum" : "919758206",
+    "placeOfPublication" : "http://id.loc.gov/vocabulary/countries/sz",
+    "about" : [ "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/mathematics_mathematical_analysis", "http://dewey.info/class/515.7222/e23/", "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_geometry", "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/mathematics_calculus", "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_theory_mathematics", "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemannian_manifolds", "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/linear_operators" ],
+    "author" : "http://experiment.worldcat.org/entity/work/data/2444971821#Person/lablee_olivier_1980",
+    "bookFormat" : "schema:EBook",
+    "datePublished" : "2015",
+    "description" : [ {
+      "@language" : "en",
+      "@value" : "Introduction to spectral geometry -- Detailed introduction to abstract spectral theory. Linear operators ; Closed operators ; Adjoint operators ; Spectrums and resolvent set ; Spectral theory of compact operators ; The spectral theorem multiplication operator form for unbounded operators on a Hilbert space ; Some complements on operators theory -- The Laplacian on a compact Riemannian manifold. Basic Riemannian geometry ; Analysis on manifolds -- Spectrum on the Laplacian on a compact manifold. Physical examples ; A class of spectral problems ; Spectral theorem for the Laplacian ; A detailed proof by a variational approach ; The minimax principle and applications ; Complements: the Schrödinger operator and the Hodge-de Rham Laplacian -- Direct problems in spectral geometry. Explicit calculation of the spectrum ; Qualitative properties of the spectrum ; The spectral partition function Z[subscript M] ; Eigenvalues and eigenfunctions of surfaces -- Intermezzo: \"Can one hear the holes of a drum?\" The main result ; Some useful spaces ; Electrostatic capacity and the Poincaré inequality ; A detailed proof of the main Theorem 6.1.1. -- Inverse problems in spectral geometry. Can one hear the shape of a drum? ; Length spectrum and trace formulas ; Milnor's counterexample ; Prescribing the spectrum on a manifold ; Heat kernel and spectral geometry ; The Minakshisundaram-Pleijel expansion and the Weyl formula ; Two planar isospectral nonisometric domains ; Few words about Laplacian and conformal geometry."
+    }, {
+      "@language" : "en",
+      "@value" : "\"Spectral theory is a diverse area of mathematics that derives its motivations, goals and impetus from several sources. In particular, the spectral theory of the Laplacian on a compact Riemannian manifold is a central object in differential geometry. From a physical point of view, the Laplacian on a compact Riemannian manifold is a fundamental linear operator which describes numerous propagation phenomena: heat propagation, wave propagation, quantum dynamics, etc. Moreover, the spectrum of the Laplacian contains vast information about the geometry of the manifold. This book gives a self-contained introduction to spectral geometry on compact Riemannian manifolds, Starting with an overview of spectral theory on Hilbert spaces, the book proceeds to a description of the basic notions in Riemannian geometry. Then it makes its way to topics of main interests in spectral geometry.The topics presented include direct and inverse problems. Direct problems are concerned with computing or finding properties on the eigenvalues while the main issue in inverse problems is \"knowing the spectrum of the Laplacian, can we determine the geometry of the manifold?\" Addressed to students or young researchers, the present book is a first introduction in spectral theory applied to geometry. For readers interested in pursuing the subject further, this book will provide a basis for understanding principles, concepts and developments of spectral geometry\"--Publisher's information."
+    } ],
+    "exampleOfWork" : "http://worldcat.org/entity/work/id/2444971821",
+    "genre" : {
+      "@language" : "en",
+      "@value" : "Electronic books"
+    },
+    "inLanguage" : "en",
+    "isPartOf" : "http://experiment.worldcat.org/entity/work/data/2444971821#Series/ems_textbooks_in_mathematics",
+    "isSimilarTo" : "http://www.worldcat.org/oclc/904652996",
+    "name" : {
+      "@language" : "en",
+      "@value" : "Spectral theory in Riemannian geometry"
+    },
+    "productID" : "919758206",
+    "url" : [ "http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=1131556", "http://www.ems-ph.org/books/book.php?proj_nr=186" ],
+    "workExample" : "http://worldcat.org/isbn/9783037196519",
+    "describedby" : "http://www.worldcat.org/title/-/oclc/919758206"
+  }, {
+    "@id" : "http://www.worldcat.org/title/-/oclc/919758206",
+    "@type" : [ "genont:ContentTypeGenericResource", "genont:InformationResource" ],
+    "inDataset" : "http://purl.oclc.org/dataset/WorldCat",
+    "about" : "http://www.worldcat.org/oclc/919758206",
+    "dateModified" : "2017-03-31"
+  } ],
+  "@context" : {
+    "isSimilarTo" : {
+      "@id" : "http://schema.org/isSimilarTo",
+      "@type" : "@id"
+    },
+    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "description" : "http://schema.org/description",
+    "name" : "http://schema.org/name",
+    "hasPart" : {
+      "@id" : "http://schema.org/hasPart",
+      "@type" : "@id"
+    },
+    "about" : {
+      "@id" : "http://schema.org/about",
+      "@type" : "@id"
+    },
+    "dateModified" : "http://schema.org/dateModified",
+    "inDataset" : {
+      "@id" : "http://rdfs.org/ns/void#inDataset",
+      "@type" : "@id"
+    },
+    "familyName" : "http://schema.org/familyName",
+    "givenName" : "http://schema.org/givenName",
+    "birthDate" : "http://schema.org/birthDate",
+    "isbn" : "http://schema.org/isbn",
+    "identifier" : "http://purl.org/dc/terms/identifier",
+    "inLanguage" : "http://schema.org/inLanguage",
+    "placeOfPublication" : {
+      "@id" : "http://purl.org/library/placeOfPublication",
+      "@type" : "@id"
+    },
+    "oclcnum" : "http://purl.org/library/oclcnum",
+    "url" : {
+      "@id" : "http://schema.org/url",
+      "@type" : "@id"
+    },
+    "workExample" : {
+      "@id" : "http://schema.org/workExample",
+      "@type" : "@id"
+    },
+    "isPartOf" : {
+      "@id" : "http://schema.org/isPartOf",
+      "@type" : "@id"
+    },
+    "author" : {
+      "@id" : "http://schema.org/author",
+      "@type" : "@id"
+    },
+    "describedby" : {
+      "@id" : "http://www.w3.org/2007/05/powder-s#describedby",
+      "@type" : "@id"
+    },
+    "bookFormat" : {
+      "@id" : "http://schema.org/bookFormat",
+      "@type" : "@id"
+    },
+    "datePublished" : "http://schema.org/datePublished",
+    "exampleOfWork" : {
+      "@id" : "http://schema.org/exampleOfWork",
+      "@type" : "@id"
+    },
+    "genre" : "http://schema.org/genre",
+    "productID" : "http://schema.org/productID",
+    "schema" : "http://schema.org/",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "genont" : "http://www.w3.org/2006/gen/ont#",
+    "wdrs" : "http://www.w3.org/2007/05/powder-s#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "library" : "http://purl.org/library/",
+    "void" : "http://rdfs.org/ns/void#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "bgn" : "http://bibliograph.net/",
+    "pto" : "http://www.productontology.org/id/",
+    "dcterms" : "http://purl.org/dc/terms/"
+  }
+}

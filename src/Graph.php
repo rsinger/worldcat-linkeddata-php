@@ -15,6 +15,11 @@ trait Graph
     protected $sourceData = [];
 
     protected $subjectDataIndex;
+    
+    /**
+     * @var array
+     */
+    protected $languagePreferences = [];
 
     /**
      * @return array
@@ -39,11 +44,17 @@ trait Graph
     protected function findSubjectDataIndex()
     {
         $className = __CLASS__;
-        foreach ($this->graph as $index => $graph) {
-            if (isset($graph['@id']) && strpos($graph['@id'], $className::ID_PREFIX) === 0) {
-                $this->subjectDataIndex = $index;
-                $this->id = $graph['@id'];
-                break;
+        foreach ($this->graph as $index => $graph) {            
+            if (isset($graph['@id'])) {
+                if ($this->id && $graph['@id'] === $this->id) {
+                    $this->subjectDataIndex = $index;
+                    break;
+                } elseif (strpos($graph['@id'], $className::ID_PREFIX) === 0 &&
+                    isset($graph['@type']) && is_array($graph['@type'])) {
+                    $this->subjectDataIndex = $index;
+                    $this->id = $graph['@id'];
+                    break;
+                }
             }
         }
     }
@@ -96,6 +107,9 @@ trait Graph
         if (isset($subject[$name])) {
             return $this->hydrateProperty($name);
         } elseif (isset($subject['@' . $name])) {
+            if ($name === 'id') {
+                return $this->getId();
+            }
             return $this->hydrateProperty('@' . $name);
         }
     }
@@ -112,9 +126,36 @@ trait Graph
         }
         $subject = $this->getSubjectData();
         if (is_array($subject[$name])) {
+            
+            $languages = $this->getLanguagePreferences();
+            
+            if (isset($subject[$name]['@value'])) {
+                return $subject[$name]['@value'];
+            }
             $values = [];
-            foreach ($subject[$name] as $value) {
-                $values[] = $this->hydratePropertyValue($value);
+            $langVals = [];
+            foreach ($subject[$name] as $value) {              
+                // TODO: clean this up
+                if (is_array($value) && array_key_exists('@language', $value)) {
+                    $idx = array_search($value['@language'], $languages);
+                    if (!isset($langVals[$value['@language']])) {
+                        $langVals[$value['@language']] = [];                        
+                    }
+                    $langVals[$value['@language']][] = $value['@value'];
+                } else {
+                    $values[] = $this->hydratePropertyValue($value);
+                }
+            }
+            if (!empty($langVals)) {
+                foreach ($languages as $language) {
+                    if (isset($langVals[$language])) {
+                        $values = array_merge($values, $langVals[$language]);
+                        break;
+                    }
+                }
+            }
+            if (count($values) === 1) {
+                return $values[0];
             }
             return $values;
         } else {
@@ -137,6 +178,9 @@ trait Graph
             $resource = $this->getResourceFromGraph($value);
             if ($resource) {
                 $entity = new Entity($resource);
+                $entity->setLanguagePreferences(
+                    $this->getLanguagePreferences()
+                );
                 return $entity;
             }
         }
@@ -155,5 +199,26 @@ trait Graph
             }
         }
         return null;
+    }
+    
+    /**
+     * Returns the preferred order of languages, will always include 'en'
+     * @return array
+     */
+    public function getLanguagePreferences()
+    {
+        if (!in_array('en', $this->languagePreferences)) {
+            $this->languagePreferences[] = 'en';
+        }
+        return $this->languagePreferences;
+    }
+    
+    /**
+     * Sets the order of preferred languages to return literals
+     * 
+     * @param array $languagePreferences
+     */
+    public function setLanguagePreferences(array $languagePreferences) {
+        $this->languagePreferences = $languagePreferences;
     }
 }

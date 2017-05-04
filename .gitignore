@@ -3,3 +3,10 @@
 composer.phar
 composer.lock
 vendor/
+.buildpath
+
+.project
+
+.settings/org.eclipse.php.core.prefs
+
+.settings/org.eclipse.wst.common.project.facet.core.xml
