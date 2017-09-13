@@ -129,4 +129,26 @@ class WorkTest extends TestCase
         $this->assertFalse($work->hasUnresolvedWorkExamples());
         \VCR\VCR::eject();
     }
+
+    public function testRedirectedExamples()
+    {
+        \VCR\VCR::insertCassette('redirectedExamples');
+        $manifestation = new Manifestation();
+        $manifestation->findByIsbn('9780061739576');
+        Work::$async = false;
+
+        $work = $manifestation->getWork();
+        $unresolvedExamples = $work->getUnresolvedWorkExamples();
+        $this->assertCount(5, $unresolvedExamples);
+        $this->assertNotContains($manifestation->getId(), $unresolvedExamples);
+        $work->getWorkExample();
+        $this->assertFalse($work->hasUnresolvedWorkExamples());
+        $redirections = $work->getRedirectedExamples();
+
+        $this->assertNotEmpty($redirections);
+        $this->assertEmpty($work->getUnresolvedWorkExamples());
+
+        $this->assertEquals($manifestation->getId(), $redirections['http://www.worldcat.org/oclc/853106705']);
+        \VCR\VCR::eject();
+    }
 }

@@ -15,6 +15,8 @@ class Work
     /** @var Manifestation[]  */
     protected $examples = [];
 
+    protected $redirectedExamples = [];
+
     /**
      * @param string $id
      */
@@ -98,6 +100,7 @@ class Work
                             $exampleIndex = array_search($id, $workExample);
                             $workExample[$exampleIndex] = $manifestation->getId();
                             $this->graph[$this->subjectDataIndex]['workExample'] = $workExample;
+                            $this->redirectedExamples[$id] = $manifestation->getId();
                         }
                     } elseif ($response['value']->getStatusCode() === 404) {
                         $this->examples[$id] = null;
@@ -122,6 +125,17 @@ class Work
     {
         $unresolvedWorkExamples = $this->getUnresolvedWorkExamples();
         return !empty($unresolvedWorkExamples);
+    }
+
+    /**
+     * Returns an associative array of URIs in the original workExample array that resolved to a different
+     * Manifestation id.  The value is the redirected URI.
+     *
+     * @return array
+     */
+    public function getRedirectedExamples()
+    {
+        return $this->redirectedExamples;
     }
 
     /**
