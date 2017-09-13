@@ -1,0 +1,104 @@
+{
+  "@graph" : [ {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/geometrie_spectrale",
+    "@type" : "schema:Topic",
+    "name" : "Géométrie spectrale."
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/laplacien",
+    "@type" : "schema:Topic",
+    "name" : "Laplacien."
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/linear_operators",
+    "@type" : "schema:Topic",
+    "name" : "Linear operators."
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/operateurs_lineaires",
+    "@type" : "schema:Topic",
+    "name" : "Opérateurs linéaires."
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemann_geometrie_de",
+    "@type" : "schema:Topic",
+    "name" : "Riemann, Géométrie de."
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemannian_manifolds",
+    "@type" : "schema:Topic",
+    "name" : "Riemannian manifolds."
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemannsche_geometrie",
+    "@type" : "schema:Topic",
+    "name" : "Riemannsche Geometrie."
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_geometry",
+    "@type" : "schema:Topic",
+    "name" : "Spectral geometry."
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_theory_mathematics",
+    "@type" : "schema:Topic",
+    "name" : "Spectral theory (Mathematics)"
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spektraltheorie",
+    "@type" : "schema:Topic",
+    "name" : "Spektraltheorie."
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/theorie_spectrale_mathematiques",
+    "@type" : "schema:Topic",
+    "name" : "Théorie spectrale (mathématiques)."
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/valeurs_propres",
+    "@type" : "schema:Topic",
+    "name" : "Valeurs propres."
+  }, {
+    "@id" : "http://experiment.worldcat.org/entity/work/data/2444971821.jsonld",
+    "inDataset" : "http://purl.oclc.org/dataset/WorldCat/Works",
+    "about" : "http://worldcat.org/entity/work/id/2444971821"
+  }, {
+    "@id" : "http://worldcat.org/entity/work/id/2444971821",
+    "@type" : [ "schema:Book", "schema:CreativeWork" ],
+    "about" : [ "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/theorie_spectrale_mathematiques", "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/laplacien", "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemann_geometrie_de", "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_geometry", "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/linear_operators", "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemannian_manifolds", "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_theory_mathematics", "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/geometrie_spectrale", "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/valeurs_propres", "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemannsche_geometrie", "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spektraltheorie", "http://experiment.worldcat.org/entity/work/data/2444971821#Topic/operateurs_lineaires" ],
+    "author" : "http://worldcat.org/entity/person/id/2712686410",
+    "creator" : "http://worldcat.org/entity/person/id/2712686410",
+    "description" : {
+      "@language" : "en",
+      "@value" : "\"Spectral theory is a diverse area of mathematics that derives its motivations, goals and impetus from several sources. In particular, the spectral theory of the Laplacian on a compact Riemannian manifold is a central object in differential geometry. From a physical point of view, the Laplacian on a compact Riemannian manifold is a fundamental linear operator which describes numerous propagation phenomena: heat propagation, wave propagation, quantum dynamics, etc. Moreover, the spectrum of the Laplacian contains vast information about the geometry of the manifold. This book gives a self-contained introduction to spectral geometry on compact Riemannian manifolds, Starting with an overview of spectral theory on Hilbert spaces, the book proceeds to a description of the basic notions in Riemannian geometry. Then it makes its way to topics of main interests in spectral geometry.The topics presented include direct and inverse problems. Direct problems are concerned with computing or finding properties on the eigenvalues while the main issue in inverse problems is \"knowing the spectrum of the Laplacian, can we determine the geometry of the manifold?\" Addressed to students or young researchers, the present book is a first introduction in spectral theory applied to geometry. For readers interested in pursuing the subject further, this book will provide a basis for understanding principles, concepts and developments of spectral geometry\"--Book jacket."
+    },
+    "name" : [ "Spectral theory in Riemannian geometry", {
+      "@language" : "en",
+      "@value" : "Spectral theory in Riemannian geometry"
+    } ],
+    "workExample" : [ "http://www.worldcat.org/oclc/904467455", "http://www.worldcat.org/oclc/908616774", "http://www.worldcat.org/oclc/904397247", "http://www.worldcat.org/oclc/909912589", "http://www.worldcat.org/oclc/904652996", "http://www.worldcat.org/oclc/906212641" ]
+  } ],
+  "@context" : {
+    "name" : "http://schema.org/name",
+    "creator" : {
+      "@id" : "http://schema.org/creator",
+      "@type" : "@id"
+    },
+    "author" : {
+      "@id" : "http://schema.org/author",
+      "@type" : "@id"
+    },
+    "about" : {
+      "@id" : "http://schema.org/about",
+      "@type" : "@id"
+    },
+    "workExample" : {
+      "@id" : "http://schema.org/workExample",
+      "@type" : "@id"
+    },
+    "description" : "http://schema.org/description",
+    "inDataset" : {
+      "@id" : "http://rdfs.org/ns/void#inDataset",
+      "@type" : "@id"
+    },
+    "schema" : "http://schema.org/",
+    "dc" : "http://purl.org/dc/elements/1.1/",
+    "madsrdf" : "http://www.loc.gov/mads/rdf/v1#",
+    "dct" : "http://purl.org/dc/terms/",
+    "library" : "http://purl.org/library/",
+    "void" : "http://rdfs.org/ns/void#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "bgn" : "http://bibliograph.net/",
+    "pto" : "http://www.productontology.org/id/",
+    "discovery" : "http://worldcat.org/vocab/discovery/"
+  }
+}

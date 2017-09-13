@@ -56,8 +56,15 @@ class Manifestation
         }
         $url = "{$this->baseUrl}isbn/{$isbn}";
         $location = $this->getRedirectLocation($url);
+        if (\is_array($location)) {
+            $location = $location[0];
+        }
+        if (\strpos($location, self::ID_PREFIX) === false) {
+            $location = self::ID_PREFIX . \basename($location);
+        }
+
         if (!empty($location)) {
-            $this->findById($location[0]);
+            $this->findById($location);
         }
     }
 
@@ -120,30 +127,6 @@ class Manifestation
     /**
      * @return array
      */
-    public function toXid()
-    {
-        $data = [];
-        if ($this->oclcnum) {
-            if (!is_array($this->oclcnum)) {
-                $data['oclcnum'] = [$this->oclcnum];
-            } else {
-                $data['oclcnum'] = $this->oclcnum;
-            }
-        }
-
-        $isbns = $this->getIsbns();
-        if (!empty($isbns)) {
-            $data['isbn'] = $isbns;
-        }
-        if ($this->creator) {
-
-        }
-        return $data;
-    }
-
-    /**
-     * @return array
-     */
     public function getIsbns()
     {
         foreach ($this->graph as $graph) {
@@ -153,7 +136,7 @@ class Manifestation
         }
         return [];
     }
-    
+
     protected function createWork()
     {
         return new Work();

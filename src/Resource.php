@@ -14,13 +14,19 @@ trait Resource
     protected $httpClient;
     protected $baseUrl = 'http://www.worldcat.org/';
 
+    static public $async = true;
+
+    static protected $userAgent = 'worldcat-linkeddata-php/0.1';
+
     /**
      * @return HttpClient
      */
     protected function getHttpClient()
     {
         if (!isset($this->httpClient)) {
-            $this->httpClient = new HttpClient();
+            $this->httpClient = new HttpClient(
+                ['headers' => ['User-Agent' =>  self::$userAgent]]
+            );
         }
         return $this->httpClient;
     }
@@ -35,6 +41,7 @@ trait Resource
             $url = $this->getId();
         }
         $url .= '.jsonld';
+
         $response = $this->getHttpClient()->get($url, ['Accept' => 'application/json']);
         if ($response->getStatusCode() === 200) {
             $this->setSourceData(json_decode($response->getBody(), true));
@@ -65,7 +72,7 @@ trait Resource
      * @param array $ids
      * @return array
      */
-    protected function fetchResources(array $ids)
+    private function fetchConcurrentResources(array $ids)
     {
         $client = $this->getHttpClient();
         $promises = [];
@@ -75,5 +82,31 @@ trait Resource
         return Promise\settle($promises)->wait();
     }
 
+    /**
+     * @param array $ids
+     * @return array
+     */
+    private function fetchSequentialResources(array $ids)
+    {
+        $client = $this->getHttpClient();
+        $results = [];
+        foreach ($ids as $id) {
+            $results[$id] = [
+                'state' => 'fulfilled',
+                'value' => $client->get($id . '.jsonld', ['Accept' => 'application/ld+json'])
+            ];
+        }
+        return $results;
+    }
 
+    /**
+     * Returns an array of responses keyed by id
+     *
+     * @param array $ids
+     * @return array
+     */
+    protected function fetchResources(array $ids)
+    {
+        return self::$async ? $this->fetchConcurrentResources($ids) : $this->fetchSequentialResources($ids);
+    }
 }

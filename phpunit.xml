@@ -1,8 +1,13 @@
-<phpunit bootstrap="vendor/autoload.php"
+<phpunit bootstrap="tests/bootstrap.php"
          colors="true">
   <testsuites>
     <testsuite name="unit">
       <directory>tests/unit</directory>
     </testsuite>
   </testsuites>
+  <filter>
+    <whitelist addUncoveredFilesFromWhitelist="true">
+        <directory>./src</directory>
+    </whitelist>
+  </filter>
 </phpunit>

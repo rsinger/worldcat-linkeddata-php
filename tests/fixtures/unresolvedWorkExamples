@@ -1,0 +1,322 @@
+
+-
+    request:
+        method: HEAD
+        url: 'http://worldcat.org/entity/work/id/2444971821'
+        headers:
+            Host: worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'worldcat-linkeddata-php/0.1'
+            Accept: null
+    response:
+        status:
+            http_version: '1.0'
+            code: '303'
+            message: 'See Other'
+        headers:            
+            Connection: Keep-Alive
+            Content-Length: '0'
+            Location: 'http://experiment.worldcat.org/entity/work/data/2444971821'
+
+           
+-
+    request:
+        method: GET
+        url: 'http://experiment.worldcat.org/entity/work/data/2444971821.jsonld'
+        headers:
+            Host: experiment.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'worldcat-linkeddata-php/0.1'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Server: Apache-Coyote/1.1
+            Access-Control-Allow-Origin: '*'
+            Pragma: no-cache
+            Cache-Control: 'no-cache, no-store, max-age=0'
+            Expires: 'Thu, 01 Jan 1970 00:00:00 GMT'
+            Content-Type: application/ld+json;charset=UTF-8
+            Content-Language: en-US
+            Transfer-Encoding: chunked
+            Date: 'Wed, 13 Sep 2017 12:39:16 GMT'
+        body: "{\n  \"@graph\" : [ {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/geometrie_spectrale\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Géométrie spectrale.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/laplacien\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Laplacien.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/linear_operators\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Linear operators.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/operateurs_lineaires\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Opérateurs linéaires.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemann_geometrie_de\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Riemann, Géométrie de.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemannian_manifolds\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Riemannian manifolds.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemannsche_geometrie\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Riemannsche Geometrie.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_geometry\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Spectral geometry.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_theory_mathematics\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Spectral theory (Mathematics)\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spektraltheorie\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Spektraltheorie.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/theorie_spectrale_mathematiques\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Théorie spectrale (mathématiques).\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/valeurs_propres\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Valeurs propres.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821.jsonld\",\n    \"inDataset\" : \"http://purl.oclc.org/dataset/WorldCat/Works\",\n    \"about\" : \"http://worldcat.org/entity/work/id/2444971821\"\n  }, {\n    \"@id\" : \"http://worldcat.org/entity/work/id/2444971821\",\n    \"@type\" : [ \"schema:Book\", \"schema:CreativeWork\" ],\n    \"about\" : [ \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/theorie_spectrale_mathematiques\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/laplacien\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemann_geometrie_de\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_geometry\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/linear_operators\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemannian_manifolds\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_theory_mathematics\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/geometrie_spectrale\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/valeurs_propres\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemannsche_geometrie\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spektraltheorie\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/operateurs_lineaires\" ],\n    \"author\" : \"http://worldcat.org/entity/person/id/2712686410\",\n    \"creator\" : \"http://worldcat.org/entity/person/id/2712686410\",\n    \"description\" : {\n      \"@language\" : \"en\",\n      \"@value\" : \"\\\"Spectral theory is a diverse area of mathematics that derives its motivations, goals and impetus from several sources. In particular, the spectral theory of the Laplacian on a compact Riemannian manifold is a central object in differential geometry. From a physical point of view, the Laplacian on a compact Riemannian manifold is a fundamental linear operator which describes numerous propagation phenomena: heat propagation, wave propagation, quantum dynamics, etc. Moreover, the spectrum of the Laplacian contains vast information about the geometry of the manifold. This book gives a self-contained introduction to spectral geometry on compact Riemannian manifolds, Starting with an overview of spectral theory on Hilbert spaces, the book proceeds to a description of the basic notions in Riemannian geometry. Then it makes its way to topics of main interests in spectral geometry.The topics presented include direct and inverse problems. Direct problems are concerned with computing or finding properties on the eigenvalues while the main issue in inverse problems is \\\"knowing the spectrum of the Laplacian, can we determine the geometry of the manifold?\\\" Addressed to students or young researchers, the present book is a first introduction in spectral theory applied to geometry. For readers interested in pursuing the subject further, this book will provide a basis for understanding principles, concepts and developments of spectral geometry\\\"--Book jacket.\"\n    },\n    \"name\" : [ \"Spectral theory in Riemannian geometry\", {\n      \"@language\" : \"en\",\n      \"@value\" : \"Spectral theory in Riemannian geometry\"\n    } ],\n    \"workExample\" : [ \"http://www.worldcat.org/oclc/904467455\", \"http://www.worldcat.org/oclc/908616774\", \"http://www.worldcat.org/oclc/904397247\", \"http://www.worldcat.org/oclc/909912589\", \"http://www.worldcat.org/oclc/904652996\", \"http://www.worldcat.org/oclc/906212641\" ]\n  } ],\n  \"@context\" : {\n    \"name\" : \"http://schema.org/name\",\n    \"creator\" : {\n      \"@id\" : \"http://schema.org/creator\",\n      \"@type\" : \"@id\"\n    },\n    \"author\" : {\n      \"@id\" : \"http://schema.org/author\",\n      \"@type\" : \"@id\"\n    },\n    \"about\" : {\n      \"@id\" : \"http://schema.org/about\",\n      \"@type\" : \"@id\"\n    },\n    \"workExample\" : {\n      \"@id\" : \"http://schema.org/workExample\",\n      \"@type\" : \"@id\"\n    },\n    \"description\" : \"http://schema.org/description\",\n    \"inDataset\" : {\n      \"@id\" : \"http://rdfs.org/ns/void#inDataset\",\n      \"@type\" : \"@id\"\n    },\n    \"schema\" : \"http://schema.org/\",\n    \"dc\" : \"http://purl.org/dc/elements/1.1/\",\n    \"madsrdf\" : \"http://www.loc.gov/mads/rdf/v1#\",\n    \"dct\" : \"http://purl.org/dc/terms/\",\n    \"library\" : \"http://purl.org/library/\",\n    \"void\" : \"http://rdfs.org/ns/void#\",\n    \"rdf\" : \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\",\n    \"bgn\" : \"http://bibliograph.net/\",\n    \"pto\" : \"http://www.productontology.org/id/\",\n    \"discovery\" : \"http://worldcat.org/vocab/discovery/\"\n  }\n}"
+-
+    request:
+        method: GET
+        url: 'http://www.worldcat.org/oclc/904467455.jsonld'
+        headers:
+            Host: www.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'worldcat-linkeddata-php/0.1'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '307'
+            message: 'Temporary Redirect'
+        headers:
+            Date: 'Wed, 13 Sep 2017 12:39:17 GMT'
+            Server: Apache
+            Location: 'http://experiment.worldcat.org/oclc/904467455.jsonld'
+            Content-Length: '0'
+            P3P: 'CP="OCLC"'
+            Content-Type: text/plain
+-
+    request:
+        method: GET
+        url: 'http://experiment.worldcat.org/oclc/904467455.jsonld'
+        headers:
+            Host: experiment.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'worldcat-linkeddata-php/0.1'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Server: Apache-Coyote/1.1
+            Access-Control-Allow-Origin: '*'
+            Pragma: no-cache
+            Cache-Control: 'no-cache, no-store, max-age=0'
+            Expires: 'Thu, 01 Jan 1970 00:00:00 GMT'
+            Content-Type: application/ld+json;charset=UTF-8
+            Content-Language: en-US
+            Transfer-Encoding: chunked
+            Date: 'Wed, 13 Sep 2017 12:39:17 GMT'
+        body: "{\n  \"@graph\" : [ {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Agent/european_mathematical_society\",\n    \"@type\" : \"bgn:Agent\",\n    \"name\" : \"European Mathematical Society\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Person/lablee_olivier\",\n    \"@type\" : \"schema:Person\",\n    \"familyName\" : \"Lablée\",\n    \"givenName\" : \"Olivier\",\n    \"name\" : \"Olivier Lablée\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Place/zurich\",\n    \"@type\" : \"schema:Place\",\n    \"name\" : \"Zürich\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Series/ems_textbooks_in_mathematics\",\n    \"@type\" : \"bgn:PublicationSeries\",\n    \"hasPart\" : \"http://www.worldcat.org/oclc/904467455\",\n    \"name\" : \"EMS textbooks in mathematics\"\n  }, {\n    \"@id\" : \"http://id.loc.gov/vocabulary/countries/sz\",\n    \"@type\" : \"schema:Place\",\n    \"identifier\" : \"sz\"\n  }, {\n    \"@id\" : \"http://worldcat.org/isbn/9783037191514\",\n    \"@type\" : \"schema:ProductModel\",\n    \"isbn\" : [ \"9783037191514\", \"3037191511\" ]\n  }, {\n    \"@id\" : \"http://www.worldcat.org/oclc/904467455\",\n    \"@type\" : [ \"schema:CreativeWork\", \"schema:Book\" ],\n    \"oclcnum\" : \"904467455\",\n    \"placeOfPublication\" : [ \"http://id.loc.gov/vocabulary/countries/sz\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Place/zurich\" ],\n    \"bookFormat\" : \"bgn:PrintBook\",\n    \"creator\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Person/lablee_olivier\",\n    \"datePublished\" : \"2015\",\n    \"exampleOfWork\" : \"http://worldcat.org/entity/work/id/2444971821\",\n    \"inLanguage\" : \"en\",\n    \"isPartOf\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Series/ems_textbooks_in_mathematics\",\n    \"name\" : \"Spectral theory in Riemannian geometry\",\n    \"productID\" : \"904467455\",\n    \"publication\" : \"http://www.worldcat.org/title/-/oclc/904467455#PublicationEvent/zurich_european_mathematical_society_2015\",\n    \"publisher\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Agent/european_mathematical_society\",\n    \"workExample\" : \"http://worldcat.org/isbn/9783037191514\",\n    \"describedby\" : \"http://www.worldcat.org/title/-/oclc/904467455\"\n  }, {\n    \"@id\" : \"http://www.worldcat.org/title/-/oclc/904467455\",\n    \"@type\" : [ \"genont:ContentTypeGenericResource\", \"genont:InformationResource\" ],\n    \"inDataset\" : \"http://purl.oclc.org/dataset/WorldCat\",\n    \"about\" : \"http://www.worldcat.org/oclc/904467455\",\n    \"dateModified\" : \"2017-09-02\"\n  }, {\n    \"@id\" : \"http://www.worldcat.org/title/-/oclc/904467455#PublicationEvent/zurich_european_mathematical_society_2015\",\n    \"@type\" : \"schema:PublicationEvent\",\n    \"location\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Place/zurich\",\n    \"organizer\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Agent/european_mathematical_society\",\n    \"startDate\" : \"2015\"\n  } ],\n  \"@context\" : {\n    \"bookFormat\" : {\n      \"@id\" : \"http://schema.org/bookFormat\",\n      \"@type\" : \"@id\"\n    },\n    \"publisher\" : {\n      \"@id\" : \"http://schema.org/publisher\",\n      \"@type\" : \"@id\"\n    },\n    \"oclcnum\" : \"http://purl.org/library/oclcnum\",\n    \"isPartOf\" : {\n      \"@id\" : \"http://schema.org/isPartOf\",\n      \"@type\" : \"@id\"\n    },\n    \"creator\" : {\n      \"@id\" : \"http://schema.org/creator\",\n      \"@type\" : \"@id\"\n    },\n    \"exampleOfWork\" : {\n      \"@id\" : \"http://schema.org/exampleOfWork\",\n      \"@type\" : \"@id\"\n    },\n    \"publication\" : {\n      \"@id\" : \"http://schema.org/publication\",\n      \"@type\" : \"@id\"\n    },\n    \"placeOfPublication\" : {\n      \"@id\" : \"http://purl.org/library/placeOfPublication\",\n      \"@type\" : \"@id\"\n    },\n    \"name\" : \"http://schema.org/name\",\n    \"workExample\" : {\n      \"@id\" : \"http://schema.org/workExample\",\n      \"@type\" : \"@id\"\n    },\n    \"inLanguage\" : \"http://schema.org/inLanguage\",\n    \"datePublished\" : \"http://schema.org/datePublished\",\n    \"describedby\" : {\n      \"@id\" : \"http://www.w3.org/2007/05/powder-s#describedby\",\n      \"@type\" : \"@id\"\n    },\n    \"productID\" : \"http://schema.org/productID\",\n    \"hasPart\" : {\n      \"@id\" : \"http://schema.org/hasPart\",\n      \"@type\" : \"@id\"\n    },\n    \"isbn\" : \"http://schema.org/isbn\",\n    \"familyName\" : \"http://schema.org/familyName\",\n    \"givenName\" : \"http://schema.org/givenName\",\n    \"about\" : {\n      \"@id\" : \"http://schema.org/about\",\n      \"@type\" : \"@id\"\n    },\n    \"dateModified\" : \"http://schema.org/dateModified\",\n    \"inDataset\" : {\n      \"@id\" : \"http://rdfs.org/ns/void#inDataset\",\n      \"@type\" : \"@id\"\n    },\n    \"identifier\" : \"http://purl.org/dc/terms/identifier\",\n    \"location\" : {\n      \"@id\" : \"http://schema.org/location\",\n      \"@type\" : \"@id\"\n    },\n    \"organizer\" : {\n      \"@id\" : \"http://schema.org/organizer\",\n      \"@type\" : \"@id\"\n    },\n    \"startDate\" : \"http://schema.org/startDate\",\n    \"schema\" : \"http://schema.org/\",\n    \"genont\" : \"http://www.w3.org/2006/gen/ont#\",\n    \"wdrs\" : \"http://www.w3.org/2007/05/powder-s#\",\n    \"xsd\" : \"http://www.w3.org/2001/XMLSchema#\",\n    \"library\" : \"http://purl.org/library/\",\n    \"void\" : \"http://rdfs.org/ns/void#\",\n    \"rdf\" : \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\",\n    \"bgn\" : \"http://bibliograph.net/\",\n    \"pto\" : \"http://www.productontology.org/id/\",\n    \"dcterms\" : \"http://purl.org/dc/terms/\"\n  }\n}"
+-
+    request:
+        method: GET
+        url: 'http://www.worldcat.org/oclc/908616774.jsonld'
+        headers:
+            Host: www.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'worldcat-linkeddata-php/0.1'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '307'
+            message: 'Temporary Redirect'
+        headers:
+            Date: 'Wed, 13 Sep 2017 12:39:19 GMT'
+            Server: Apache
+            Location: 'http://experiment.worldcat.org/oclc/908616774.jsonld'
+            Content-Length: '0'
+            P3P: 'CP="OCLC"'
+            Content-Type: text/plain
+-
+    request:
+        method: GET
+        url: 'http://experiment.worldcat.org/oclc/908616774.jsonld'
+        headers:
+            Host: experiment.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'worldcat-linkeddata-php/0.1'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Server: Apache-Coyote/1.1
+            Access-Control-Allow-Origin: '*'
+            Pragma: no-cache
+            Cache-Control: 'no-cache, no-store, max-age=0'
+            Expires: 'Thu, 01 Jan 1970 00:00:00 GMT'
+            Content-Type: application/ld+json;charset=UTF-8
+            Content-Language: en-US
+            Transfer-Encoding: chunked
+            Date: 'Wed, 13 Sep 2017 12:39:21 GMT'
+        body: "{\n  \"@graph\" : [ {\n    \"@id\" : \"http://dx.doi.org/10.4171/151\",\n    \"@type\" : \"schema:IndividualProduct\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Agent/european_mathematical_society\",\n    \"@type\" : \"bgn:Agent\",\n    \"name\" : \"European Mathematical Society\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Person/lablee_olivier\",\n    \"@type\" : \"schema:Person\",\n    \"familyName\" : \"Lablée\",\n    \"givenName\" : \"Olivier\",\n    \"name\" : \"Olivier Lablée\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Place/zurich\",\n    \"@type\" : \"schema:Place\",\n    \"name\" : \"Zürich\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Series/ems_textbooks_in_mathematics\",\n    \"@type\" : \"bgn:PublicationSeries\",\n    \"hasPart\" : \"http://www.worldcat.org/oclc/908616774\",\n    \"name\" : \"EMS textbooks in mathematics\"\n  }, {\n    \"@id\" : \"http://id.loc.gov/vocabulary/countries/sz\",\n    \"@type\" : \"schema:Place\",\n    \"identifier\" : \"sz\"\n  }, {\n    \"@id\" : \"http://worldcat.org/isbn/9783037191514\",\n    \"@type\" : \"schema:ProductModel\",\n    \"isbn\" : [ \"9783037191514\", \"3037191511\" ]\n  }, {\n    \"@id\" : \"http://www.worldcat.org/oclc/908616774\",\n    \"@type\" : [ \"schema:CreativeWork\", \"schema:Book\" ],\n    \"oclcnum\" : \"908616774\",\n    \"placeOfPublication\" : [ \"http://id.loc.gov/vocabulary/countries/sz\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Place/zurich\" ],\n    \"bookFormat\" : \"schema:EBook\",\n    \"creator\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Person/lablee_olivier\",\n    \"datePublished\" : \"2015\",\n    \"exampleOfWork\" : \"http://worldcat.org/entity/work/id/2444971821\",\n    \"inLanguage\" : \"en\",\n    \"isPartOf\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Series/ems_textbooks_in_mathematics\",\n    \"name\" : \"Spectral theory in Riemannian geometry\",\n    \"productID\" : \"908616774\",\n    \"publication\" : \"http://www.worldcat.org/title/-/oclc/908616774#PublicationEvent/zurich_european_mathematical_society_2015\",\n    \"publisher\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Agent/european_mathematical_society\",\n    \"url\" : [ \"http://www.ems-ph.org/qsearch.php?browse_series=1&series=etb\", \"http://dx.doi.org/10.4171/151\", \"http://www.ems-ph.org/books/show%5Fpdf.php?proj%5Fnr=186&vol=1\", \"http://www.ems-ph.org/books/book.php?proj%5Fnr=186\", \"http://www.ems-ph.org/books/book.php?proj_nr=186\" ],\n    \"workExample\" : [ \"http://worldcat.org/isbn/9783037191514\", \"http://dx.doi.org/10.4171/151\" ],\n    \"describedby\" : \"http://www.worldcat.org/title/-/oclc/908616774\"\n  }, {\n    \"@id\" : \"http://www.worldcat.org/title/-/oclc/908616774\",\n    \"@type\" : [ \"genont:ContentTypeGenericResource\", \"genont:InformationResource\" ],\n    \"inDataset\" : \"http://purl.oclc.org/dataset/WorldCat\",\n    \"about\" : \"http://www.worldcat.org/oclc/908616774\",\n    \"dateModified\" : \"2017-09-02\"\n  }, {\n    \"@id\" : \"http://www.worldcat.org/title/-/oclc/908616774#PublicationEvent/zurich_european_mathematical_society_2015\",\n    \"@type\" : \"schema:PublicationEvent\",\n    \"location\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Place/zurich\",\n    \"organizer\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Agent/european_mathematical_society\",\n    \"startDate\" : \"2015\"\n  } ],\n  \"@context\" : {\n    \"about\" : {\n      \"@id\" : \"http://schema.org/about\",\n      \"@type\" : \"@id\"\n    },\n    \"dateModified\" : \"http://schema.org/dateModified\",\n    \"inDataset\" : {\n      \"@id\" : \"http://rdfs.org/ns/void#inDataset\",\n      \"@type\" : \"@id\"\n    },\n    \"hasPart\" : {\n      \"@id\" : \"http://schema.org/hasPart\",\n      \"@type\" : \"@id\"\n    },\n    \"name\" : \"http://schema.org/name\",\n    \"productID\" : \"http://schema.org/productID\",\n    \"exampleOfWork\" : {\n      \"@id\" : \"http://schema.org/exampleOfWork\",\n      \"@type\" : \"@id\"\n    },\n    \"placeOfPublication\" : {\n      \"@id\" : \"http://purl.org/library/placeOfPublication\",\n      \"@type\" : \"@id\"\n    },\n    \"workExample\" : {\n      \"@id\" : \"http://schema.org/workExample\",\n      \"@type\" : \"@id\"\n    },\n    \"inLanguage\" : \"http://schema.org/inLanguage\",\n    \"url\" : {\n      \"@id\" : \"http://schema.org/url\",\n      \"@type\" : \"@id\"\n    },\n    \"isPartOf\" : {\n      \"@id\" : \"http://schema.org/isPartOf\",\n      \"@type\" : \"@id\"\n    },\n    \"bookFormat\" : {\n      \"@id\" : \"http://schema.org/bookFormat\",\n      \"@type\" : \"@id\"\n    },\n    \"oclcnum\" : \"http://purl.org/library/oclcnum\",\n    \"publisher\" : {\n      \"@id\" : \"http://schema.org/publisher\",\n      \"@type\" : \"@id\"\n    },\n    \"creator\" : {\n      \"@id\" : \"http://schema.org/creator\",\n      \"@type\" : \"@id\"\n    },\n    \"datePublished\" : \"http://schema.org/datePublished\",\n    \"describedby\" : {\n      \"@id\" : \"http://www.w3.org/2007/05/powder-s#describedby\",\n      \"@type\" : \"@id\"\n    },\n    \"publication\" : {\n      \"@id\" : \"http://schema.org/publication\",\n      \"@type\" : \"@id\"\n    },\n    \"isbn\" : \"http://schema.org/isbn\",\n    \"familyName\" : \"http://schema.org/familyName\",\n    \"givenName\" : \"http://schema.org/givenName\",\n    \"location\" : {\n      \"@id\" : \"http://schema.org/location\",\n      \"@type\" : \"@id\"\n    },\n    \"organizer\" : {\n      \"@id\" : \"http://schema.org/organizer\",\n      \"@type\" : \"@id\"\n    },\n    \"startDate\" : \"http://schema.org/startDate\",\n    \"identifier\" : \"http://purl.org/dc/terms/identifier\",\n    \"schema\" : \"http://schema.org/\",\n    \"genont\" : \"http://www.w3.org/2006/gen/ont#\",\n    \"wdrs\" : \"http://www.w3.org/2007/05/powder-s#\",\n    \"xsd\" : \"http://www.w3.org/2001/XMLSchema#\",\n    \"library\" : \"http://purl.org/library/\",\n    \"void\" : \"http://rdfs.org/ns/void#\",\n    \"rdf\" : \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\",\n    \"bgn\" : \"http://bibliograph.net/\",\n    \"pto\" : \"http://www.productontology.org/id/\",\n    \"dcterms\" : \"http://purl.org/dc/terms/\"\n  }\n}"
+-
+    request:
+        method: GET
+        url: 'http://www.worldcat.org/oclc/904397247.jsonld'
+        headers:
+            Host: www.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'worldcat-linkeddata-php/0.1'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '307'
+            message: 'Temporary Redirect'
+        headers:
+            Date: 'Wed, 13 Sep 2017 12:39:23 GMT'
+            Server: Apache
+            Location: 'http://experiment.worldcat.org/oclc/904397247.jsonld'
+            Content-Length: '0'
+            P3P: 'CP="OCLC"'
+            Content-Type: text/plain
+-
+    request:
+        method: GET
+        url: 'http://experiment.worldcat.org/oclc/904397247.jsonld'
+        headers:
+            Host: experiment.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'worldcat-linkeddata-php/0.1'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Server: Apache-Coyote/1.1
+            Access-Control-Allow-Origin: '*'
+            Pragma: no-cache
+            Cache-Control: 'no-cache, no-store, max-age=0'
+            Expires: 'Thu, 01 Jan 1970 00:00:00 GMT'
+            Content-Type: application/ld+json;charset=UTF-8
+            Content-Language: en-US
+            Transfer-Encoding: chunked
+            Date: 'Wed, 13 Sep 2017 12:39:25 GMT'
+        body: "{\n  \"@graph\" : [ {\n    \"@id\" : \"http://dewey.info/class/516.373/e22/\",\n    \"@type\" : \"schema:Intangible\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Agent/european_mathematical_society\",\n    \"@type\" : \"bgn:Agent\",\n    \"name\" : \"European mathematical Society\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Person/lablee_olivier_1980\",\n    \"@type\" : \"schema:Person\",\n    \"birthDate\" : \"1980\",\n    \"deathDate\" : \"\",\n    \"familyName\" : \"Lablée\",\n    \"givenName\" : \"Olivier\",\n    \"name\" : \"Olivier Lablée\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Place/zurich\",\n    \"@type\" : \"schema:Place\",\n    \"name\" : \"Zürich\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Series/ems_textbooks_in_mathematics\",\n    \"@type\" : \"bgn:PublicationSeries\",\n    \"hasPart\" : \"http://www.worldcat.org/oclc/904397247\",\n    \"name\" : [ \"EMS Textbooks in mathematics\", \"EMS Textbooks in mathematics.\" ]\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/geometrie_spectrale\",\n    \"@type\" : \"schema:Intangible\",\n    \"name\" : \"Géométrie spectrale\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/laplacien\",\n    \"@type\" : \"schema:Intangible\",\n    \"name\" : \"Laplacien\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/operateurs_lineaires\",\n    \"@type\" : \"schema:Intangible\",\n    \"name\" : \"Opérateurs linéaires\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemann_geometrie_de\",\n    \"@type\" : \"schema:Intangible\",\n    \"name\" : \"Riemann, Géométrie de\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/theorie_spectrale_mathematiques\",\n    \"@type\" : \"schema:Intangible\",\n    \"name\" : \"Théorie spectrale (mathématiques)\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/valeurs_propres\",\n    \"@type\" : \"schema:Intangible\",\n    \"name\" : \"Valeurs propres\"\n  }, {\n    \"@id\" : \"http://id.loc.gov/vocabulary/countries/sz\",\n    \"@type\" : \"schema:Place\",\n    \"identifier\" : \"sz\"\n  }, {\n    \"@id\" : \"http://worldcat.org/entity/work/data/2444971821#CreativeWork/spectral_theory_in_riemannian_geometry_olivier_lablee\",\n    \"@type\" : \"schema:CreativeWork\",\n    \"isSimilarTo\" : \"http://www.worldcat.org/oclc/904397247\",\n    \"label\" : \"Spectral theory in Riemannian geometry / Olivier Lablée.\"\n  }, {\n    \"@id\" : \"http://worldcat.org/isbn/9783037191514\",\n    \"@type\" : \"schema:ProductModel\",\n    \"isbn\" : [ \"9783037191514\", \"3037191511\" ]\n  }, {\n    \"@id\" : \"http://www.worldcat.org/oclc/904397247\",\n    \"@type\" : [ \"schema:CreativeWork\", \"schema:Book\" ],\n    \"oclcnum\" : \"904397247\",\n    \"placeOfPublication\" : [ \"http://id.loc.gov/vocabulary/countries/sz\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Place/zurich\" ],\n    \"about\" : [ \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/operateurs_lineaires\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/laplacien\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/theorie_spectrale_mathematiques\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/valeurs_propres\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/geometrie_spectrale\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemann_geometrie_de\", \"http://dewey.info/class/516.373/e22/\" ],\n    \"author\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Person/lablee_olivier_1980\",\n    \"bookFormat\" : \"bgn:PrintBook\",\n    \"copyrightYear\" : [ \"2015\", \"op.\" ],\n    \"datePublished\" : \"2015\",\n    \"exampleOfWork\" : \"http://worldcat.org/entity/work/id/2444971821\",\n    \"inLanguage\" : \"en\",\n    \"isPartOf\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Series/ems_textbooks_in_mathematics\",\n    \"isSimilarTo\" : \"http://worldcat.org/entity/work/data/2444971821#CreativeWork/spectral_theory_in_riemannian_geometry_olivier_lablee\",\n    \"name\" : \"Spectral theory in Riemannian geometry\",\n    \"productID\" : \"904397247\",\n    \"publication\" : \"http://www.worldcat.org/title/-/oclc/904397247#PublicationEvent/zurich_european_mathematical_society_cop_2015\",\n    \"publisher\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Agent/european_mathematical_society\",\n    \"workExample\" : \"http://worldcat.org/isbn/9783037191514\",\n    \"describedby\" : \"http://www.worldcat.org/title/-/oclc/904397247\"\n  }, {\n    \"@id\" : \"http://www.worldcat.org/title/-/oclc/904397247\",\n    \"@type\" : [ \"genont:ContentTypeGenericResource\", \"genont:InformationResource\" ],\n    \"inDataset\" : \"http://purl.oclc.org/dataset/WorldCat\",\n    \"about\" : \"http://www.worldcat.org/oclc/904397247\",\n    \"dateModified\" : \"2017-09-02\"\n  }, {\n    \"@id\" : \"http://www.worldcat.org/title/-/oclc/904397247#PublicationEvent/zurich_european_mathematical_society_cop_2015\",\n    \"@type\" : \"schema:PublicationEvent\",\n    \"location\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Place/zurich\",\n    \"organizer\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Agent/european_mathematical_society\",\n    \"startDate\" : \"co. 2015\"\n  } ],\n  \"@context\" : {\n    \"hasPart\" : {\n      \"@id\" : \"http://schema.org/hasPart\",\n      \"@type\" : \"@id\"\n    },\n    \"name\" : \"http://schema.org/name\",\n    \"location\" : {\n      \"@id\" : \"http://schema.org/location\",\n      \"@type\" : \"@id\"\n    },\n    \"organizer\" : {\n      \"@id\" : \"http://schema.org/organizer\",\n      \"@type\" : \"@id\"\n    },\n    \"startDate\" : \"http://schema.org/startDate\",\n    \"isSimilarTo\" : {\n      \"@id\" : \"http://schema.org/isSimilarTo\",\n      \"@type\" : \"@id\"\n    },\n    \"label\" : \"http://www.w3.org/2000/01/rdf-schema#label\",\n    \"about\" : {\n      \"@id\" : \"http://schema.org/about\",\n      \"@type\" : \"@id\"\n    },\n    \"dateModified\" : \"http://schema.org/dateModified\",\n    \"inDataset\" : {\n      \"@id\" : \"http://rdfs.org/ns/void#inDataset\",\n      \"@type\" : \"@id\"\n    },\n    \"isbn\" : \"http://schema.org/isbn\",\n    \"familyName\" : \"http://schema.org/familyName\",\n    \"givenName\" : \"http://schema.org/givenName\",\n    \"birthDate\" : \"http://schema.org/birthDate\",\n    \"deathDate\" : \"http://schema.org/deathDate\",\n    \"copyrightYear\" : \"http://schema.org/copyrightYear\",\n    \"inLanguage\" : \"http://schema.org/inLanguage\",\n    \"publisher\" : {\n      \"@id\" : \"http://schema.org/publisher\",\n      \"@type\" : \"@id\"\n    },\n    \"datePublished\" : \"http://schema.org/datePublished\",\n    \"isPartOf\" : {\n      \"@id\" : \"http://schema.org/isPartOf\",\n      \"@type\" : \"@id\"\n    },\n    \"productID\" : \"http://schema.org/productID\",\n    \"placeOfPublication\" : {\n      \"@id\" : \"http://purl.org/library/placeOfPublication\",\n      \"@type\" : \"@id\"\n    },\n    \"workExample\" : {\n      \"@id\" : \"http://schema.org/workExample\",\n      \"@type\" : \"@id\"\n    },\n    \"publication\" : {\n      \"@id\" : \"http://schema.org/publication\",\n      \"@type\" : \"@id\"\n    },\n    \"author\" : {\n      \"@id\" : \"http://schema.org/author\",\n      \"@type\" : \"@id\"\n    },\n    \"oclcnum\" : \"http://purl.org/library/oclcnum\",\n    \"exampleOfWork\" : {\n      \"@id\" : \"http://schema.org/exampleOfWork\",\n      \"@type\" : \"@id\"\n    },\n    \"describedby\" : {\n      \"@id\" : \"http://www.w3.org/2007/05/powder-s#describedby\",\n      \"@type\" : \"@id\"\n    },\n    \"bookFormat\" : {\n      \"@id\" : \"http://schema.org/bookFormat\",\n      \"@type\" : \"@id\"\n    },\n    \"identifier\" : \"http://purl.org/dc/terms/identifier\",\n    \"schema\" : \"http://schema.org/\",\n    \"rdfs\" : \"http://www.w3.org/2000/01/rdf-schema#\",\n    \"genont\" : \"http://www.w3.org/2006/gen/ont#\",\n    \"wdrs\" : \"http://www.w3.org/2007/05/powder-s#\",\n    \"xsd\" : \"http://www.w3.org/2001/XMLSchema#\",\n    \"library\" : \"http://purl.org/library/\",\n    \"void\" : \"http://rdfs.org/ns/void#\",\n    \"rdf\" : \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\",\n    \"bgn\" : \"http://bibliograph.net/\",\n    \"pto\" : \"http://www.productontology.org/id/\",\n    \"dcterms\" : \"http://purl.org/dc/terms/\"\n  }\n}"
+-
+    request:
+        method: GET
+        url: 'http://www.worldcat.org/oclc/909912589.jsonld'
+        headers:
+            Host: www.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'worldcat-linkeddata-php/0.1'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '307'
+            message: 'Temporary Redirect'
+        headers:
+            Date: 'Wed, 13 Sep 2017 12:39:28 GMT'
+            Server: Apache
+            Location: 'http://experiment.worldcat.org/oclc/909912589.jsonld'
+            Content-Length: '0'
+            P3P: 'CP="OCLC"'
+            Content-Type: text/plain
+-
+    request:
+        method: GET
+        url: 'http://experiment.worldcat.org/oclc/909912589.jsonld'
+        headers:
+            Host: experiment.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'worldcat-linkeddata-php/0.1'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Server: Apache-Coyote/1.1
+            Access-Control-Allow-Origin: '*'
+            Pragma: no-cache
+            Cache-Control: 'no-cache, no-store, max-age=0'
+            Expires: 'Thu, 01 Jan 1970 00:00:00 GMT'
+            Content-Type: application/ld+json;charset=UTF-8
+            Content-Language: en-US
+            Transfer-Encoding: chunked
+            Date: 'Wed, 13 Sep 2017 12:39:30 GMT'
+        body: "{\n  \"@graph\" : [ {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Agent/european_mathematical_society\",\n    \"@type\" : \"bgn:Agent\",\n    \"name\" : \"European Mathematical Society\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Person/lablee_olivier\",\n    \"@type\" : \"schema:Person\",\n    \"familyName\" : \"Lablée\",\n    \"givenName\" : \"Olivier\",\n    \"name\" : \"Olivier Lablée\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Place/zurich\",\n    \"@type\" : \"schema:Place\",\n    \"name\" : \"Zürich\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Series/ems_textbooks_in_mathematics\",\n    \"@type\" : \"bgn:PublicationSeries\",\n    \"hasPart\" : \"http://www.worldcat.org/oclc/904467455\",\n    \"name\" : \"EMS textbooks in mathematics\"\n  }, {\n    \"@id\" : \"http://id.loc.gov/vocabulary/countries/sz\",\n    \"@type\" : \"schema:Place\",\n    \"identifier\" : \"sz\"\n  }, {\n    \"@id\" : \"http://worldcat.org/isbn/9783037191514\",\n    \"@type\" : \"schema:ProductModel\",\n    \"isbn\" : [ \"9783037191514\", \"3037191511\" ]\n  }, {\n    \"@id\" : \"http://www.worldcat.org/oclc/904467455\",\n    \"@type\" : [ \"schema:CreativeWork\", \"schema:Book\" ],\n    \"oclcnum\" : \"904467455\",\n    \"placeOfPublication\" : [ \"http://id.loc.gov/vocabulary/countries/sz\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Place/zurich\" ],\n    \"bookFormat\" : \"bgn:PrintBook\",\n    \"creator\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Person/lablee_olivier\",\n    \"datePublished\" : \"2015\",\n    \"exampleOfWork\" : \"http://worldcat.org/entity/work/id/2444971821\",\n    \"inLanguage\" : \"en\",\n    \"isPartOf\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Series/ems_textbooks_in_mathematics\",\n    \"name\" : \"Spectral theory in Riemannian geometry\",\n    \"productID\" : \"904467455\",\n    \"publication\" : \"http://www.worldcat.org/title/-/oclc/904467455#PublicationEvent/zurich_european_mathematical_society_2015\",\n    \"publisher\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Agent/european_mathematical_society\",\n    \"workExample\" : \"http://worldcat.org/isbn/9783037191514\",\n    \"describedby\" : \"http://www.worldcat.org/title/-/oclc/904467455\"\n  }, {\n    \"@id\" : \"http://www.worldcat.org/title/-/oclc/904467455\",\n    \"@type\" : [ \"genont:ContentTypeGenericResource\", \"genont:InformationResource\" ],\n    \"inDataset\" : \"http://purl.oclc.org/dataset/WorldCat\",\n    \"about\" : \"http://www.worldcat.org/oclc/904467455\",\n    \"dateModified\" : \"2017-09-02\"\n  }, {\n    \"@id\" : \"http://www.worldcat.org/title/-/oclc/904467455#PublicationEvent/zurich_european_mathematical_society_2015\",\n    \"@type\" : \"schema:PublicationEvent\",\n    \"location\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Place/zurich\",\n    \"organizer\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Agent/european_mathematical_society\",\n    \"startDate\" : \"2015\"\n  } ],\n  \"@context\" : {\n    \"bookFormat\" : {\n      \"@id\" : \"http://schema.org/bookFormat\",\n      \"@type\" : \"@id\"\n    },\n    \"publisher\" : {\n      \"@id\" : \"http://schema.org/publisher\",\n      \"@type\" : \"@id\"\n    },\n    \"oclcnum\" : \"http://purl.org/library/oclcnum\",\n    \"isPartOf\" : {\n      \"@id\" : \"http://schema.org/isPartOf\",\n      \"@type\" : \"@id\"\n    },\n    \"creator\" : {\n      \"@id\" : \"http://schema.org/creator\",\n      \"@type\" : \"@id\"\n    },\n    \"exampleOfWork\" : {\n      \"@id\" : \"http://schema.org/exampleOfWork\",\n      \"@type\" : \"@id\"\n    },\n    \"publication\" : {\n      \"@id\" : \"http://schema.org/publication\",\n      \"@type\" : \"@id\"\n    },\n    \"placeOfPublication\" : {\n      \"@id\" : \"http://purl.org/library/placeOfPublication\",\n      \"@type\" : \"@id\"\n    },\n    \"name\" : \"http://schema.org/name\",\n    \"workExample\" : {\n      \"@id\" : \"http://schema.org/workExample\",\n      \"@type\" : \"@id\"\n    },\n    \"inLanguage\" : \"http://schema.org/inLanguage\",\n    \"datePublished\" : \"http://schema.org/datePublished\",\n    \"describedby\" : {\n      \"@id\" : \"http://www.w3.org/2007/05/powder-s#describedby\",\n      \"@type\" : \"@id\"\n    },\n    \"productID\" : \"http://schema.org/productID\",\n    \"hasPart\" : {\n      \"@id\" : \"http://schema.org/hasPart\",\n      \"@type\" : \"@id\"\n    },\n    \"isbn\" : \"http://schema.org/isbn\",\n    \"familyName\" : \"http://schema.org/familyName\",\n    \"givenName\" : \"http://schema.org/givenName\",\n    \"about\" : {\n      \"@id\" : \"http://schema.org/about\",\n      \"@type\" : \"@id\"\n    },\n    \"dateModified\" : \"http://schema.org/dateModified\",\n    \"inDataset\" : {\n      \"@id\" : \"http://rdfs.org/ns/void#inDataset\",\n      \"@type\" : \"@id\"\n    },\n    \"identifier\" : \"http://purl.org/dc/terms/identifier\",\n    \"location\" : {\n      \"@id\" : \"http://schema.org/location\",\n      \"@type\" : \"@id\"\n    },\n    \"organizer\" : {\n      \"@id\" : \"http://schema.org/organizer\",\n      \"@type\" : \"@id\"\n    },\n    \"startDate\" : \"http://schema.org/startDate\",\n    \"schema\" : \"http://schema.org/\",\n    \"genont\" : \"http://www.w3.org/2006/gen/ont#\",\n    \"wdrs\" : \"http://www.w3.org/2007/05/powder-s#\",\n    \"xsd\" : \"http://www.w3.org/2001/XMLSchema#\",\n    \"library\" : \"http://purl.org/library/\",\n    \"void\" : \"http://rdfs.org/ns/void#\",\n    \"rdf\" : \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\",\n    \"bgn\" : \"http://bibliograph.net/\",\n    \"pto\" : \"http://www.productontology.org/id/\",\n    \"dcterms\" : \"http://purl.org/dc/terms/\"\n  }\n}"
+-
+    request:
+        method: GET
+        url: 'http://www.worldcat.org/oclc/904652996.jsonld'
+        headers:
+            Host: www.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'worldcat-linkeddata-php/0.1'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '307'
+            message: 'Temporary Redirect'
+        headers:
+            Date: 'Wed, 13 Sep 2017 12:39:35 GMT'
+            Server: Apache
+            Location: 'http://experiment.worldcat.org/oclc/904652996.jsonld'
+            Content-Length: '0'
+            P3P: 'CP="OCLC"'
+            Content-Type: text/plain
+-
+    request:
+        method: GET
+        url: 'http://experiment.worldcat.org/oclc/904652996.jsonld'
+        headers:
+            Host: experiment.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'worldcat-linkeddata-php/0.1'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Server: Apache-Coyote/1.1
+            Access-Control-Allow-Origin: '*'
+            Pragma: no-cache
+            Cache-Control: 'no-cache, no-store, max-age=0'
+            Expires: 'Thu, 01 Jan 1970 00:00:00 GMT'
+            Content-Type: application/ld+json;charset=UTF-8
+            Content-Language: en-US
+            Transfer-Encoding: chunked
+            Date: 'Wed, 13 Sep 2017 12:39:39 GMT'
+        body: "{\n  \"@graph\" : [ {\n    \"@id\" : \"http://dewey.info/class/516.362/e23/\",\n    \"@type\" : \"schema:Intangible\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Person/lablee_olivier_1980\",\n    \"@type\" : \"schema:Person\",\n    \"birthDate\" : \"1980\",\n    \"familyName\" : \"Lablée\",\n    \"givenName\" : \"Olivier\",\n    \"name\" : \"Olivier Lablée\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Series/ems_textbooks_in_mathematics\",\n    \"@type\" : \"bgn:PublicationSeries\",\n    \"hasPart\" : \"http://www.worldcat.org/oclc/904652996\",\n    \"name\" : [ \"EMS textbooks in mathematics\", \"EMS textbooks in mathematics.\" ]\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/linear_operators\",\n    \"@type\" : \"schema:Intangible\",\n    \"name\" : {\n      \"@language\" : \"en\",\n      \"@value\" : \"Linear operators\"\n    }\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemannian_manifolds\",\n    \"@type\" : \"schema:Intangible\",\n    \"name\" : {\n      \"@language\" : \"en\",\n      \"@value\" : \"Riemannian manifolds\"\n    }\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_geometry\",\n    \"@type\" : \"schema:Intangible\",\n    \"name\" : {\n      \"@language\" : \"en\",\n      \"@value\" : \"Spectral geometry\"\n    }\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_theory_mathematics\",\n    \"@type\" : \"schema:Intangible\",\n    \"name\" : {\n      \"@language\" : \"en\",\n      \"@value\" : \"Spectral theory (Mathematics)\"\n    }\n  }, {\n    \"@id\" : \"http://id.loc.gov/vocabulary/countries/sz\",\n    \"@type\" : \"schema:Place\",\n    \"identifier\" : \"sz\"\n  }, {\n    \"@id\" : \"http://worldcat.org/isbn/9783037191514\",\n    \"@type\" : \"schema:ProductModel\",\n    \"isbn\" : [ \"9783037191514\", \"3037191511\" ]\n  }, {\n    \"@id\" : \"http://www.worldcat.org/oclc/904652996\",\n    \"@type\" : [ \"schema:CreativeWork\", \"schema:Book\" ],\n    \"oclcnum\" : \"904652996\",\n    \"placeOfPublication\" : \"http://id.loc.gov/vocabulary/countries/sz\",\n    \"about\" : [ \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_theory_mathematics\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_geometry\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemannian_manifolds\", \"http://dewey.info/class/516.362/e23/\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/linear_operators\" ],\n    \"author\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Person/lablee_olivier_1980\",\n    \"bookFormat\" : \"bgn:PrintBook\",\n    \"copyrightYear\" : \"2015\",\n    \"datePublished\" : \"2015\",\n    \"description\" : [ {\n      \"@language\" : \"en\",\n      \"@value\" : \"Introduction to spectral geometry -- Detailed introduction to abstract spectral theory. Linear operators ; Closed operators ; Adjoint operators ; Spectrums and resolvent set ; Spectral theory of compact operators ; The spectral theorem multiplication operator form for unbounded operators on a Hilbert space ; Some complements on operators theory -- The Laplacian on a compact Riemannian manifold. Basic Riemannian geometry ; Analysis on manifolds -- Spectrum on the Laplacian on a compact manifold. Physical examples ; A class of spectral problems ; Spectral theorem for the Laplacian ; A detailed proof by a variational approach ; The minimax principle and applications ; Complements: the Schrödinger operator and the Hodge-de Rham Laplacian -- Direct problems in spectral geometry. Explicit calculation of the spectrum ; Qualitative properties of the spectrum ; The spectral partition function Z[subscript M] ; Eigenvalues and eigenfunctions of surfaces -- Intermezzo: \\\"Can one hear the holes of a drum?\\\" The main result ; Some useful spaces ; Electrostatic capacity and the Poincaré inequality ; A detailed proof of the main Theorem 6.1.1. -- Inverse problems in spectral geometry. Can one hear the shape of a drum? ; Length spectrum and trace formulas ; Milnor's counterexample ; Prescribing the spectrum on a manifold ; Heat kernel and spectral geometry ; The Minakshisundaram-Pleijel expansion and the Weyl formula ; Two planar isospectral nonisometric domains ; Few words about Laplacian and conformal geometry.\"\n    }, {\n      \"@language\" : \"en\",\n      \"@value\" : \"\\\"Spectral theory is a diverse area of mathematics that derives its motivations, goals and impetus from several sources. In particular, the spectral theory of the Laplacian on a compact Riemannian manifold is a central object in differential geometry. From a physical point of view, the Laplacian on a compact Riemannian manifold is a fundamental linear operator which describes numerous propagation phenomena: heat propagation, wave propagation, quantum dynamics, etc. Moreover, the spectrum of the Laplacian contains vast information about the geometry of the manifold. This book gives a self-contained introduction to spectral geometry on compact Riemannian manifolds, Starting with an overview of spectral theory on Hilbert spaces, the book proceeds to a description of the basic notions in Riemannian geometry. Then it makes its way to topics of main interests in spectral geometry. The topics presented include direct and inverse problems. Direct problems are concerned with computing or finding properties on the eigenvalues while the main issue in inverse problems is \\\"knowing the spectrum of the Laplacian, can we determine the geometry of the manifold?\\\" Addressed to students or young researchers, the present book is a first introduction in spectral theory applied to geometry. For readers interested in pursuing the subject further, this book will provide a basis for understanding principles, concepts and developments of spectral geometry\\\"--Jacket.\"\n    } ],\n    \"exampleOfWork\" : \"http://worldcat.org/entity/work/id/2444971821\",\n    \"inLanguage\" : \"en\",\n    \"isPartOf\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Series/ems_textbooks_in_mathematics\",\n    \"name\" : {\n      \"@language\" : \"en\",\n      \"@value\" : \"Spectral theory in Riemannian geometry\"\n    },\n    \"productID\" : \"904652996\",\n    \"workExample\" : \"http://worldcat.org/isbn/9783037191514\",\n    \"describedby\" : \"http://www.worldcat.org/title/-/oclc/904652996\"\n  }, {\n    \"@id\" : \"http://www.worldcat.org/title/-/oclc/904652996\",\n    \"@type\" : [ \"genont:ContentTypeGenericResource\", \"genont:InformationResource\" ],\n    \"inDataset\" : \"http://purl.oclc.org/dataset/WorldCat\",\n    \"about\" : \"http://www.worldcat.org/oclc/904652996\",\n    \"dateModified\" : \"2017-09-02\"\n  } ],\n  \"@context\" : {\n    \"about\" : {\n      \"@id\" : \"http://schema.org/about\",\n      \"@type\" : \"@id\"\n    },\n    \"copyrightYear\" : \"http://schema.org/copyrightYear\",\n    \"datePublished\" : \"http://schema.org/datePublished\",\n    \"bookFormat\" : {\n      \"@id\" : \"http://schema.org/bookFormat\",\n      \"@type\" : \"@id\"\n    },\n    \"productID\" : \"http://schema.org/productID\",\n    \"description\" : \"http://schema.org/description\",\n    \"inLanguage\" : \"http://schema.org/inLanguage\",\n    \"workExample\" : {\n      \"@id\" : \"http://schema.org/workExample\",\n      \"@type\" : \"@id\"\n    },\n    \"name\" : \"http://schema.org/name\",\n    \"exampleOfWork\" : {\n      \"@id\" : \"http://schema.org/exampleOfWork\",\n      \"@type\" : \"@id\"\n    },\n    \"describedby\" : {\n      \"@id\" : \"http://www.w3.org/2007/05/powder-s#describedby\",\n      \"@type\" : \"@id\"\n    },\n    \"placeOfPublication\" : {\n      \"@id\" : \"http://purl.org/library/placeOfPublication\",\n      \"@type\" : \"@id\"\n    },\n    \"oclcnum\" : \"http://purl.org/library/oclcnum\",\n    \"isPartOf\" : {\n      \"@id\" : \"http://schema.org/isPartOf\",\n      \"@type\" : \"@id\"\n    },\n    \"author\" : {\n      \"@id\" : \"http://schema.org/author\",\n      \"@type\" : \"@id\"\n    },\n    \"hasPart\" : {\n      \"@id\" : \"http://schema.org/hasPart\",\n      \"@type\" : \"@id\"\n    },\n    \"isbn\" : \"http://schema.org/isbn\",\n    \"familyName\" : \"http://schema.org/familyName\",\n    \"givenName\" : \"http://schema.org/givenName\",\n    \"birthDate\" : \"http://schema.org/birthDate\",\n    \"dateModified\" : \"http://schema.org/dateModified\",\n    \"inDataset\" : {\n      \"@id\" : \"http://rdfs.org/ns/void#inDataset\",\n      \"@type\" : \"@id\"\n    },\n    \"identifier\" : \"http://purl.org/dc/terms/identifier\",\n    \"schema\" : \"http://schema.org/\",\n    \"genont\" : \"http://www.w3.org/2006/gen/ont#\",\n    \"wdrs\" : \"http://www.w3.org/2007/05/powder-s#\",\n    \"xsd\" : \"http://www.w3.org/2001/XMLSchema#\",\n    \"library\" : \"http://purl.org/library/\",\n    \"void\" : \"http://rdfs.org/ns/void#\",\n    \"rdf\" : \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\",\n    \"bgn\" : \"http://bibliograph.net/\",\n    \"pto\" : \"http://www.productontology.org/id/\",\n    \"dcterms\" : \"http://purl.org/dc/terms/\"\n  }\n}"
+-
+    request:
+        method: GET
+        url: 'http://www.worldcat.org/oclc/906212641.jsonld'
+        headers:
+            Host: www.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'worldcat-linkeddata-php/0.1'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '307'
+            message: 'Temporary Redirect'
+        headers:
+            Date: 'Wed, 13 Sep 2017 12:39:43 GMT'
+            Server: Apache
+            Location: 'http://experiment.worldcat.org/oclc/906212641.jsonld'
+            Content-Length: '0'
+            P3P: 'CP="OCLC"'
+            Content-Type: text/plain
+-
+    request:
+        method: GET
+        url: 'http://experiment.worldcat.org/oclc/906212641.jsonld'
+        headers:
+            Host: experiment.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'worldcat-linkeddata-php/0.1'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Server: Apache-Coyote/1.1
+            Access-Control-Allow-Origin: '*'
+            Pragma: no-cache
+            Cache-Control: 'no-cache, no-store, max-age=0'
+            Expires: 'Thu, 01 Jan 1970 00:00:00 GMT'
+            Content-Type: application/ld+json;charset=UTF-8
+            Content-Language: en-US
+            Transfer-Encoding: chunked
+            Date: 'Wed, 13 Sep 2017 12:39:47 GMT'
+        body: "{\n  \"@graph\" : [ {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Agent/european_mathematical_society\",\n    \"@type\" : \"bgn:Agent\",\n    \"name\" : \"European Mathematical Society\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Person/lablee_olivier_1980\",\n    \"@type\" : \"schema:Person\",\n    \"birthDate\" : \"1980\",\n    \"deathDate\" : \"\",\n    \"familyName\" : \"Lablée\",\n    \"givenName\" : \"Olivier\",\n    \"name\" : \"Olivier Lablée\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Place/zurich\",\n    \"@type\" : \"schema:Place\",\n    \"name\" : \"Zurich\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Series/ems_textbooks_in_mathematics\",\n    \"@type\" : \"bgn:PublicationSeries\",\n    \"hasPart\" : \"http://www.worldcat.org/oclc/906212641\",\n    \"name\" : [ \"EMS Textbooks in mathematics\", \"EMS Textbooks in mathematics.\" ]\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/geometrie_spectrale\",\n    \"@type\" : \"schema:Intangible\",\n    \"name\" : \"Géométrie spectrale\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/laplacien\",\n    \"@type\" : \"schema:Intangible\",\n    \"name\" : \"Laplacien\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/operateurs_lineaires\",\n    \"@type\" : \"schema:Intangible\",\n    \"name\" : \"Opérateurs linéaires\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemann_geometrie_de\",\n    \"@type\" : \"schema:Intangible\",\n    \"name\" : \"Riemann, Géométrie de\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/theorie_spectrale_mathematiques\",\n    \"@type\" : \"schema:Intangible\",\n    \"name\" : \"Théorie spectrale (mathématiques)\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/valeurs_propres\",\n    \"@type\" : \"schema:Intangible\",\n    \"name\" : \"Valeurs propres\"\n  }, {\n    \"@id\" : \"http://id.loc.gov/vocabulary/countries/sz\",\n    \"@type\" : \"schema:Place\",\n    \"identifier\" : \"sz\"\n  }, {\n    \"@id\" : \"http://worldcat.org/entity/work/data/2444971821#CreativeWork/spectral_theory_in_riemannian_geometry_olivier_lablee\",\n    \"@type\" : \"schema:CreativeWork\",\n    \"isSimilarTo\" : \"http://www.worldcat.org/oclc/906212641\",\n    \"label\" : \"Spectral theory in Riemannian geometry / Olivier Lablée.\"\n  }, {\n    \"@id\" : \"http://worldcat.org/isbn/9783037196519\",\n    \"@type\" : \"schema:ProductModel\",\n    \"isbn\" : [ \"9783037196519\", \"3037196513\" ]\n  }, {\n    \"@id\" : \"http://www.worldcat.org/oclc/906212641\",\n    \"@type\" : [ \"schema:CreativeWork\", \"schema:MediaObject\", \"bgn:ComputerFile\" ],\n    \"oclcnum\" : \"906212641\",\n    \"placeOfPublication\" : [ \"http://experiment.worldcat.org/entity/work/data/2444971821#Place/zurich\", \"http://id.loc.gov/vocabulary/countries/sz\" ],\n    \"about\" : [ \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/laplacien\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/operateurs_lineaires\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemann_geometrie_de\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/theorie_spectrale_mathematiques\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/valeurs_propres\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/geometrie_spectrale\" ],\n    \"author\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Person/lablee_olivier_1980\",\n    \"datePublished\" : \"2015\",\n    \"exampleOfWork\" : \"http://worldcat.org/entity/work/id/2444971821\",\n    \"inLanguage\" : \"en\",\n    \"isPartOf\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Series/ems_textbooks_in_mathematics\",\n    \"isSimilarTo\" : \"http://worldcat.org/entity/work/data/2444971821#CreativeWork/spectral_theory_in_riemannian_geometry_olivier_lablee\",\n    \"name\" : \"Spectral theory in Riemannian geometry\",\n    \"productID\" : \"906212641\",\n    \"publication\" : \"http://www.worldcat.org/title/-/oclc/906212641#PublicationEvent/zurich_european_mathematical_society_2015\",\n    \"publisher\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Agent/european_mathematical_society\",\n    \"url\" : \"http://www.ems-ph.org/books/book.php?proj_nr=186&srch=series|etb\",\n    \"workExample\" : \"http://worldcat.org/isbn/9783037196519\",\n    \"comment\" : \"Warning: This malformed URI has been treated as a string - 'http://www.ems-ph.org/books/book.php?proj_nr=186&srch=series|etb'\",\n    \"describedby\" : \"http://www.worldcat.org/title/-/oclc/906212641\"\n  }, {\n    \"@id\" : \"http://www.worldcat.org/title/-/oclc/906212641\",\n    \"@type\" : [ \"genont:ContentTypeGenericResource\", \"genont:InformationResource\" ],\n    \"inDataset\" : \"http://purl.oclc.org/dataset/WorldCat\",\n    \"about\" : \"http://www.worldcat.org/oclc/906212641\",\n    \"dateModified\" : \"2017-09-02\"\n  }, {\n    \"@id\" : \"http://www.worldcat.org/title/-/oclc/906212641#PublicationEvent/zurich_european_mathematical_society_2015\",\n    \"@type\" : \"schema:PublicationEvent\",\n    \"location\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Place/zurich\",\n    \"organizer\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Agent/european_mathematical_society\",\n    \"startDate\" : \"2015\"\n  } ],\n  \"@context\" : {\n    \"about\" : {\n      \"@id\" : \"http://schema.org/about\",\n      \"@type\" : \"@id\"\n    },\n    \"dateModified\" : \"http://schema.org/dateModified\",\n    \"inDataset\" : {\n      \"@id\" : \"http://rdfs.org/ns/void#inDataset\",\n      \"@type\" : \"@id\"\n    },\n    \"hasPart\" : {\n      \"@id\" : \"http://schema.org/hasPart\",\n      \"@type\" : \"@id\"\n    },\n    \"name\" : \"http://schema.org/name\",\n    \"location\" : {\n      \"@id\" : \"http://schema.org/location\",\n      \"@type\" : \"@id\"\n    },\n    \"organizer\" : {\n      \"@id\" : \"http://schema.org/organizer\",\n      \"@type\" : \"@id\"\n    },\n    \"startDate\" : \"http://schema.org/startDate\",\n    \"isSimilarTo\" : {\n      \"@id\" : \"http://schema.org/isSimilarTo\",\n      \"@type\" : \"@id\"\n    },\n    \"label\" : \"http://www.w3.org/2000/01/rdf-schema#label\",\n    \"familyName\" : \"http://schema.org/familyName\",\n    \"givenName\" : \"http://schema.org/givenName\",\n    \"birthDate\" : \"http://schema.org/birthDate\",\n    \"deathDate\" : \"http://schema.org/deathDate\",\n    \"isbn\" : \"http://schema.org/isbn\",\n    \"productID\" : \"http://schema.org/productID\",\n    \"placeOfPublication\" : {\n      \"@id\" : \"http://purl.org/library/placeOfPublication\",\n      \"@type\" : \"@id\"\n    },\n    \"author\" : {\n      \"@id\" : \"http://schema.org/author\",\n      \"@type\" : \"@id\"\n    },\n    \"workExample\" : {\n      \"@id\" : \"http://schema.org/workExample\",\n      \"@type\" : \"@id\"\n    },\n    \"describedby\" : {\n      \"@id\" : \"http://www.w3.org/2007/05/powder-s#describedby\",\n      \"@type\" : \"@id\"\n    },\n    \"publisher\" : {\n      \"@id\" : \"http://schema.org/publisher\",\n      \"@type\" : \"@id\"\n    },\n    \"datePublished\" : \"http://schema.org/datePublished\",\n    \"exampleOfWork\" : {\n      \"@id\" : \"http://schema.org/exampleOfWork\",\n      \"@type\" : \"@id\"\n    },\n    \"url\" : \"http://schema.org/url\",\n    \"isPartOf\" : {\n      \"@id\" : \"http://schema.org/isPartOf\",\n      \"@type\" : \"@id\"\n    },\n    \"comment\" : \"http://www.w3.org/2000/01/rdf-schema#comment\",\n    \"publication\" : {\n      \"@id\" : \"http://schema.org/publication\",\n      \"@type\" : \"@id\"\n    },\n    \"inLanguage\" : \"http://schema.org/inLanguage\",\n    \"oclcnum\" : \"http://purl.org/library/oclcnum\",\n    \"identifier\" : \"http://purl.org/dc/terms/identifier\",\n    \"schema\" : \"http://schema.org/\",\n    \"rdfs\" : \"http://www.w3.org/2000/01/rdf-schema#\",\n    \"genont\" : \"http://www.w3.org/2006/gen/ont#\",\n    \"wdrs\" : \"http://www.w3.org/2007/05/powder-s#\",\n    \"xsd\" : \"http://www.w3.org/2001/XMLSchema#\",\n    \"library\" : \"http://purl.org/library/\",\n    \"void\" : \"http://rdfs.org/ns/void#\",\n    \"rdf\" : \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\",\n    \"bgn\" : \"http://bibliograph.net/\",\n    \"pto\" : \"http://www.productontology.org/id/\",\n    \"dcterms\" : \"http://purl.org/dc/terms/\"\n  }\n}"
