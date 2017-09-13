@@ -11,5 +11,6 @@ class TestBase extends TestCase
         $className = get_class($this);
         $testName = $this->getName();
         echo " Test: {$className}->{$testName}\n";
+        parent::setUp();
     }
 }

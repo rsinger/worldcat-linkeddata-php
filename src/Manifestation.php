@@ -127,38 +127,6 @@ class Manifestation
     /**
      * @return array
      */
-    public function toXid()
-    {
-        $data = [];
-        if ($this->oclcnum) {
-            if (!is_array($this->oclcnum)) {
-                $data['oclcnum'] = [$this->oclcnum];
-            } else {
-                $data['oclcnum'] = $this->oclcnum;
-            }
-        }
-
-        $isbns = $this->getIsbns();
-        if (!empty($isbns)) {
-            $data['isbn'] = $isbns;
-        }
-        if ($this->creator) {
-            // todo
-        }
-
-        if ($this->bookEdition) {
-            $data['ed'] = $this->bookEdition;
-        }
-
-        if ($this->datePublished) {
-            $data['year'] = $this->datePublished;
-        }
-        return $data;
-    }
-
-    /**
-     * @return array
-     */
     public function getIsbns()
     {
         foreach ($this->graph as $graph) {

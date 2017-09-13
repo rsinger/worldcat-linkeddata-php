@@ -92,6 +92,13 @@ class Work
                         $manifestation = new Manifestation();
                         $manifestation->setSourceData(json_decode($response['value']->getBody(), true));
                         $this->addExample($manifestation);
+                        // Sometimes the examples of work actually resolve to a graph with a different id
+                        if ($manifestation->getId() !== $id) {
+                            $workExample = $this->getSubjectData()['workExample'];
+                            $exampleIndex = array_search($id, $workExample);
+                            $workExample[$exampleIndex] = $manifestation->getId();
+                            $this->graph[$this->subjectDataIndex]['workExample'] = $workExample;
+                        }
                     } elseif ($response['value']->getStatusCode() === 404) {
                         $this->examples[$id] = null;
                     }
@@ -131,16 +138,6 @@ class Work
             }
         }
         $this->fetchResourceData($id);
-    }
-
-    /**
-     * @return XidResponse
-     */
-    public function toXid()
-    {
-        $xid = new XidResponse();
-        $xid->addManifestations($this->getWorkExample());
-        return $xid;
     }
 
     /**

@@ -14,6 +14,8 @@ trait Resource
     protected $httpClient;
     protected $baseUrl = 'http://www.worldcat.org/';
 
+    static public $async = true;
+
     /**
      * @return HttpClient
      */
@@ -66,7 +68,7 @@ trait Resource
      * @param array $ids
      * @return array
      */
-    protected function fetchResources(array $ids)
+    private function fetchConcurrentResources(array $ids)
     {
         $client = $this->getHttpClient();
         $promises = [];
@@ -74,5 +76,33 @@ trait Resource
             $promises[$id] = $client->getAsync($id . '.jsonld', ['Accept' => 'application/ld+json']);
         }
         return Promise\settle($promises)->wait();
+    }
+
+    /**
+     * @param array $ids
+     * @return array
+     */
+    private function fetchSequentialResources(array $ids)
+    {
+        $client = $this->getHttpClient();
+        $results = [];
+        foreach ($ids as $id) {
+            $results[$id] = [
+                'state' => 'fulfilled',
+                'value' => $client->get($id . '.jsonld', ['Accept' => 'application/ld+json'])
+            ];
+        }
+        return $results;
+    }
+
+    /**
+     * Returns an array of responses keyed by id
+     *
+     * @param array $ids
+     * @return array
+     */
+    protected function fetchResources(array $ids)
+    {
+        return self::$async ? $this->fetchConcurrentResources($ids) : $this->fetchSequentialResources($ids);
     }
 }

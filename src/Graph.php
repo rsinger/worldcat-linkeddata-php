@@ -57,6 +57,16 @@ trait Graph
                 }
             }
         }
+        if (!$this->subjectDataIndex) {
+            foreach ($this->graph as $index => $graph) {
+                if (isset($graph['@id']) && strpos($graph['@id'], $className::ID_PREFIX) === 0 &&
+                    isset($graph['exampleOfWork'])) {
+                        $this->subjectDataIndex = $index;
+                        $this->id = $graph['@id'];
+                        break;
+                }
+            }
+        }
     }
 
     /**

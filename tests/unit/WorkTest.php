@@ -117,36 +117,16 @@ class WorkTest extends TestCase
         );
     }
 
-    // public function testHasUnresolvedWorkExamples()
-    // {
-    //     $work = new Work();
-    //     $manifestation = new Manifestation();
-    //     $dir = dirname(__FILE__);
-    //     $jsonld = file_get_contents($dir . '/fixtures/2444971821.jsonld');
-    //     $sourceData = json_decode($jsonld, true);
-    //     $work->setSourceData($sourceData);
-    //     $this->assertTrue($work->hasUnresolvedWorkExamples());
-    // }
-
     public function testHasUnresolvedWorkExamples()
     {
-        // After turning on the VCR will intercept all requests
-        \VCR\VCR::turnOn();
-
-        // Record requests and responses in cassette file 'example'
         \VCR\VCR::insertCassette('unresolvedWorkExamples');
-
+        Work::$async = false;
         $work = new Work();
         $work->findById('2444971821');
 
         $this->assertTrue($work->hasUnresolvedWorkExamples());
-print_r($work->getUnresolvedWorkExamples());
         $work->getWorkExample();
         $this->assertFalse($work->hasUnresolvedWorkExamples());
-        // To stop recording requests, eject the cassette
         \VCR\VCR::eject();
-
-        // Turn off VCR to stop intercepting requests
-        \VCR\VCR::turnOff();
     }
 }
