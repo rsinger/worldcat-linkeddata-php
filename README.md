@@ -5,8 +5,8 @@ A PHP library for working with OCLC WorldCat's Linked Data implementation.
 Allows you to retrieve metadata for known items (via OCLC number or ISBN) and 
 retrieve the work and all other examples of work (i.e. FRBR Work/Manifestations).
 
-Provides most of the functionality of OCLC's xID services and includes a 
-semi-functional class for returning data in the rough shape as xID.
+Provides most of the functionality of OCLC's xID services ~~and includes a 
+semi-functional class for returning data in the rough shape as xID~~. (removed this for now)
 
 Examples:
 ```
