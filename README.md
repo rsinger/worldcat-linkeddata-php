@@ -11,22 +11,23 @@ semi-functional class for returning data in the rough shape as xID~~. (removed t
 Examples:
 ```
 $manifestation = new \WorldCatLD\Manifestation();
-$manifestation->findByIsbn('9780898450590');
+$manifestation->findByIsbn('9780375985294');
 echo $manifestation->name;
 => "The phantom tollbooth"
 
 get_class($manifestation->author);
 => "WorldCatLD\Entity"
 
-echo $manifestation->author->name;
+echo $manifestation->creator->name;
 => "Norton Juster"
 
 $work = $manifestation->getWork();
-$manifestations = $work->getExamplesOfWork();
-count($manifestation);
-=> 145
+$manifestations = $work->getWorkExample();
+count($manifestations);
+=> 152
 
-foreach ($manifestation as $id => $exampleOfWork) {
+foreach ($manifestations as $id => $exampleOfWork) {
+echo($id . "\n");
     echo $exampleOfWork->name . "\n";
 }
 
