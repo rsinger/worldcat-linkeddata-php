@@ -16,13 +16,17 @@ trait Resource
 
     static public $async = true;
 
+    static protected $userAgent = 'worldcat-linkeddata-php/0.1';
+
     /**
      * @return HttpClient
      */
     protected function getHttpClient()
     {
         if (!isset($this->httpClient)) {
-            $this->httpClient = new HttpClient();
+            $this->httpClient = new HttpClient(
+                ['headers' => ['User-Agent' =>  self::$userAgent]]
+            );
         }
         return $this->httpClient;
     }

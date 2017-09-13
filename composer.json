@@ -1,5 +1,5 @@
 {
-	"name" : "rossfsinger/worldcat-linkeddata-php",
+	"name" : "rsinger/worldcat-linkeddata-php",
 	"description" : "This is a PHP linked data client for WorldCat.org",
 	"keywords" : [
 		"oclc",
@@ -9,7 +9,7 @@
 		"php",
 		"client library"
 	],
-	"homepage" : "https://github.com/rossfsinger/worldcat-linkeddata-php",
+	"homepage" : "https://github.com/rsinger/worldcat-linkeddata-php",
 	"type" : "library",
 	"license" : "MIT",
 	"authors" : [{

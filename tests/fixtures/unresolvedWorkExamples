@@ -6,7 +6,7 @@
         headers:
             Host: worldcat.org
             Accept-Encoding: null
-            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            User-Agent: 'worldcat-linkeddata-php/0.1'
             Accept: null
     response:
         status:
@@ -26,7 +26,7 @@
         headers:
             Host: experiment.worldcat.org
             Accept-Encoding: null
-            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            User-Agent: 'worldcat-linkeddata-php/0.1'
             Accept: null
     response:
         status:
@@ -51,7 +51,7 @@
         headers:
             Host: www.worldcat.org
             Accept-Encoding: null
-            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            User-Agent: 'worldcat-linkeddata-php/0.1'
             Accept: null
     response:
         status:
@@ -72,7 +72,7 @@
         headers:
             Host: experiment.worldcat.org
             Accept-Encoding: null
-            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            User-Agent: 'worldcat-linkeddata-php/0.1'
             Accept: null
     response:
         status:
@@ -97,7 +97,7 @@
         headers:
             Host: www.worldcat.org
             Accept-Encoding: null
-            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            User-Agent: 'worldcat-linkeddata-php/0.1'
             Accept: null
     response:
         status:
@@ -118,7 +118,7 @@
         headers:
             Host: experiment.worldcat.org
             Accept-Encoding: null
-            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            User-Agent: 'worldcat-linkeddata-php/0.1'
             Accept: null
     response:
         status:
@@ -143,7 +143,7 @@
         headers:
             Host: www.worldcat.org
             Accept-Encoding: null
-            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            User-Agent: 'worldcat-linkeddata-php/0.1'
             Accept: null
     response:
         status:
@@ -164,7 +164,7 @@
         headers:
             Host: experiment.worldcat.org
             Accept-Encoding: null
-            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            User-Agent: 'worldcat-linkeddata-php/0.1'
             Accept: null
     response:
         status:
@@ -189,7 +189,7 @@
         headers:
             Host: www.worldcat.org
             Accept-Encoding: null
-            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            User-Agent: 'worldcat-linkeddata-php/0.1'
             Accept: null
     response:
         status:
@@ -210,7 +210,7 @@
         headers:
             Host: experiment.worldcat.org
             Accept-Encoding: null
-            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            User-Agent: 'worldcat-linkeddata-php/0.1'
             Accept: null
     response:
         status:
@@ -235,7 +235,7 @@
         headers:
             Host: www.worldcat.org
             Accept-Encoding: null
-            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            User-Agent: 'worldcat-linkeddata-php/0.1'
             Accept: null
     response:
         status:
@@ -256,7 +256,7 @@
         headers:
             Host: experiment.worldcat.org
             Accept-Encoding: null
-            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            User-Agent: 'worldcat-linkeddata-php/0.1'
             Accept: null
     response:
         status:
@@ -281,7 +281,7 @@
         headers:
             Host: www.worldcat.org
             Accept-Encoding: null
-            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            User-Agent: 'worldcat-linkeddata-php/0.1'
             Accept: null
     response:
         status:
@@ -302,7 +302,7 @@
         headers:
             Host: experiment.worldcat.org
             Accept-Encoding: null
-            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            User-Agent: 'worldcat-linkeddata-php/0.1'
             Accept: null
     response:
         status:
