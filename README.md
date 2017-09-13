@@ -27,7 +27,6 @@ count($manifestations);
 => 152
 
 foreach ($manifestations as $id => $exampleOfWork) {
-echo($id . "\n");
     echo $exampleOfWork->name . "\n";
 }
 
