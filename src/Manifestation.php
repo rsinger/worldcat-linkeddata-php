@@ -56,8 +56,15 @@ class Manifestation
         }
         $url = "{$this->baseUrl}isbn/{$isbn}";
         $location = $this->getRedirectLocation($url);
+        if (\is_array($location)) {
+            $location = $location[0];
+        }
+        if (\strpos($location, self::ID_PREFIX) === false) {
+            $location = self::ID_PREFIX . \basename($location);
+        }
+
         if (!empty($location)) {
-            $this->findById($location[0]);
+            $this->findById($location);
         }
     }
 
@@ -136,7 +143,15 @@ class Manifestation
             $data['isbn'] = $isbns;
         }
         if ($this->creator) {
+            // todo
+        }
 
+        if ($this->bookEdition) {
+            $data['ed'] = $this->bookEdition;
+        }
+
+        if ($this->datePublished) {
+            $data['year'] = $this->datePublished;
         }
         return $data;
     }
@@ -153,7 +168,7 @@ class Manifestation
         }
         return [];
     }
-    
+
     protected function createWork()
     {
         return new Work();

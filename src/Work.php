@@ -34,7 +34,7 @@ class Work
      */
     public function findByOclcNumber($id)
     {
-        $manifestation = new Manifestation();
+        $manifestation = $this->createManifestation();
         $manifestation->findByOclcNumber($id);
         $this->addExample($manifestation);
         $this->fetchWorkData($this->getId());
@@ -45,7 +45,7 @@ class Work
      */
     public function findByIsbn($isbn)
     {
-        $manifestation = new Manifestation();
+        $manifestation = $this->createManifestation();
         $manifestation->findByIsbn($isbn);
         $this->addExample($manifestation);
         $this->fetchWorkData($this->getId());
@@ -88,7 +88,6 @@ class Work
             $resources = $this->fetchResources($ids);
             foreach ($resources as $id => $response) {
                 if ($response['state'] === 'fulfilled') {
-
                     if ($response['value']->getStatusCode() === 200) {
                         $manifestation = new Manifestation();
                         $manifestation->setSourceData(json_decode($response['value']->getBody(), true));
@@ -125,7 +124,11 @@ class Work
     {
         if (strpos($id, self::ID_PREFIX) === 0) {
             $location = $this->getRedirectLocation($id);
-            $id = $location[0];
+            if (is_array($location)) {
+                $id = $location[0];
+            } else {
+                $id = $location;
+            }
         }
         $this->fetchResourceData($id);
     }
@@ -138,5 +141,15 @@ class Work
         $xid = new XidResponse();
         $xid->addManifestations($this->getWorkExample());
         return $xid;
+    }
+
+    /**
+     * For mocking
+     *
+     * @return Manifestation
+     */
+    protected function createManifestation()
+    {
+        return new Manifestation();
     }
 }

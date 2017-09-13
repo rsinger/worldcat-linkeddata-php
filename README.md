@@ -10,7 +10,7 @@ semi-functional class for returning data in the rough shape as xID.
 
 Examples:
 ```
-$manifestation = new \WorldCat\Manifestation();
+$manifestation = new \WorldCatLD\Manifestation();
 $manifestation->findByIsbn('9780898450590');
 echo $manifestation->name;
 => "The phantom tollbooth"

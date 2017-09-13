@@ -1,0 +1,170 @@
+
+-
+    request:
+        method: HEAD
+        url: 'http://worldcat.org/entity/work/id/2444971821'
+        headers:
+            Host: worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            Accept: null
+    response:
+        status:
+            http_version: '1.0'
+            code: '303'
+            message: 'See Other'
+        headers:            
+            Connection: Keep-Alive
+            Content-Length: '0'
+            Location: 'http://experiment.worldcat.org/entity/work/data/2444971821'
+-
+    request:
+        method: GET
+        url: 'http://experiment.worldcat.org/entity/work/data/2444971821.jsonld'
+        headers:
+            Host: experiment.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Server: Apache-Coyote/1.1
+            Access-Control-Allow-Origin: '*'
+            Pragma: no-cache
+            Cache-Control: 'no-cache, no-store, max-age=0'
+            Expires: 'Thu, 01 Jan 1970 00:00:00 GMT'
+            Content-Type: application/ld+json;charset=UTF-8
+            Content-Language: en-US
+            Transfer-Encoding: chunked
+            Date: 'Tue, 12 Sep 2017 22:04:35 GMT'
+        body: "{\n  \"@graph\" : [ {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/geometrie_spectrale\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Géométrie spectrale.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/laplacien\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Laplacien.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/linear_operators\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Linear operators.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/operateurs_lineaires\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Opérateurs linéaires.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemann_geometrie_de\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Riemann, Géométrie de.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemannian_manifolds\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Riemannian manifolds.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemannsche_geometrie\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Riemannsche Geometrie.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_geometry\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Spectral geometry.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_theory_mathematics\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Spectral theory (Mathematics)\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spektraltheorie\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Spektraltheorie.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/theorie_spectrale_mathematiques\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Théorie spectrale (mathématiques).\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/valeurs_propres\",\n    \"@type\" : \"schema:Topic\",\n    \"name\" : \"Valeurs propres.\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/2444971821.jsonld\",\n    \"inDataset\" : \"http://purl.oclc.org/dataset/WorldCat/Works\",\n    \"about\" : \"http://worldcat.org/entity/work/id/2444971821\"\n  }, {\n    \"@id\" : \"http://worldcat.org/entity/work/id/2444971821\",\n    \"@type\" : [ \"schema:Book\", \"schema:CreativeWork\" ],\n    \"about\" : [ \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/theorie_spectrale_mathematiques\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/laplacien\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemann_geometrie_de\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_geometry\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/linear_operators\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemannian_manifolds\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spectral_theory_mathematics\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/geometrie_spectrale\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/valeurs_propres\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/riemannsche_geometrie\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/spektraltheorie\", \"http://experiment.worldcat.org/entity/work/data/2444971821#Topic/operateurs_lineaires\" ],\n    \"author\" : \"http://worldcat.org/entity/person/id/2712686410\",\n    \"creator\" : \"http://worldcat.org/entity/person/id/2712686410\",\n    \"description\" : {\n      \"@language\" : \"en\",\n      \"@value\" : \"\\\"Spectral theory is a diverse area of mathematics that derives its motivations, goals and impetus from several sources. In particular, the spectral theory of the Laplacian on a compact Riemannian manifold is a central object in differential geometry. From a physical point of view, the Laplacian on a compact Riemannian manifold is a fundamental linear operator which describes numerous propagation phenomena: heat propagation, wave propagation, quantum dynamics, etc. Moreover, the spectrum of the Laplacian contains vast information about the geometry of the manifold. This book gives a self-contained introduction to spectral geometry on compact Riemannian manifolds, Starting with an overview of spectral theory on Hilbert spaces, the book proceeds to a description of the basic notions in Riemannian geometry. Then it makes its way to topics of main interests in spectral geometry.The topics presented include direct and inverse problems. Direct problems are concerned with computing or finding properties on the eigenvalues while the main issue in inverse problems is \\\"knowing the spectrum of the Laplacian, can we determine the geometry of the manifold?\\\" Addressed to students or young researchers, the present book is a first introduction in spectral theory applied to geometry. For readers interested in pursuing the subject further, this book will provide a basis for understanding principles, concepts and developments of spectral geometry\\\"--Book jacket.\"\n    },\n    \"name\" : [ \"Spectral theory in Riemannian geometry\", {\n      \"@language\" : \"en\",\n      \"@value\" : \"Spectral theory in Riemannian geometry\"\n    } ],\n    \"workExample\" : [ \"http://www.worldcat.org/oclc/904467455\", \"http://www.worldcat.org/oclc/908616774\", \"http://www.worldcat.org/oclc/904397247\", \"http://www.worldcat.org/oclc/909912589\", \"http://www.worldcat.org/oclc/904652996\", \"http://www.worldcat.org/oclc/906212641\" ]\n  } ],\n  \"@context\" : {\n    \"name\" : \"http://schema.org/name\",\n    \"creator\" : {\n      \"@id\" : \"http://schema.org/creator\",\n      \"@type\" : \"@id\"\n    },\n    \"author\" : {\n      \"@id\" : \"http://schema.org/author\",\n      \"@type\" : \"@id\"\n    },\n    \"about\" : {\n      \"@id\" : \"http://schema.org/about\",\n      \"@type\" : \"@id\"\n    },\n    \"workExample\" : {\n      \"@id\" : \"http://schema.org/workExample\",\n      \"@type\" : \"@id\"\n    },\n    \"description\" : \"http://schema.org/description\",\n    \"inDataset\" : {\n      \"@id\" : \"http://rdfs.org/ns/void#inDataset\",\n      \"@type\" : \"@id\"\n    },\n    \"schema\" : \"http://schema.org/\",\n    \"dc\" : \"http://purl.org/dc/elements/1.1/\",\n    \"madsrdf\" : \"http://www.loc.gov/mads/rdf/v1#\",\n    \"dct\" : \"http://purl.org/dc/terms/\",\n    \"library\" : \"http://purl.org/library/\",\n    \"void\" : \"http://rdfs.org/ns/void#\",\n    \"rdf\" : \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\",\n    \"bgn\" : \"http://bibliograph.net/\",\n    \"pto\" : \"http://www.productontology.org/id/\",\n    \"discovery\" : \"http://worldcat.org/vocab/discovery/\"\n  }\n}"
+-
+    request:
+        method: GET
+        url: 'http://www.worldcat.org/oclc/904467455.jsonld'
+        headers:
+            Host: www.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '307'
+            message: 'Temporary Redirect'
+        headers:
+            Date: 'Tue, 12 Sep 2017 22:05:09 GMT'
+            Server: Apache
+            Location: 'http://experiment.worldcat.org/oclc/904467455.jsonld'
+            Content-Length: '0'
+            P3P: 'CP="OCLC"'
+            Content-Type: text/plain
+-
+    request:
+        method: GET
+        url: 'http://www.worldcat.org/oclc/908616774.jsonld'
+        headers:
+            Host: www.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '307'
+            message: 'Temporary Redirect'
+        headers:            
+            Server: Apache
+            Location: 'http://experiment.worldcat.org/oclc/908616774.jsonld'
+            Content-Length: '0'
+            P3P: 'CP="OCLC"'
+            Content-Type: text/plain
+            Date: 'Tue, 12 Sep 2017 22:05:10 GMT'
+-
+    request:
+        method: GET
+        url: 'http://www.worldcat.org/oclc/904397247.jsonld'
+        headers:
+            Host: www.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '307'
+            message: 'Temporary Redirect'
+        headers:            
+            Server: Apache
+            Location: 'http://experiment.worldcat.org/oclc/904397247.jsonld'
+            Content-Length: '0'
+            P3P: 'CP="OCLC"'
+            Content-Type: text/plain
+            Date: 'Tue, 12 Sep 2017 22:05:11 GMT'
+-
+    request:
+        method: GET
+        url: 'http://www.worldcat.org/oclc/909912589.jsonld'
+        headers:
+            Host: www.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '307'
+            message: 'Temporary Redirect'
+        headers:            
+            Server: Apache
+            Location: 'http://experiment.worldcat.org/oclc/909912589.jsonld'
+            Content-Length: '0'
+            P3P: 'CP="OCLC"'
+            Content-Type: text/plain
+            Date: 'Tue, 12 Sep 2017 22:05:12 GMT'
+-
+    request:
+        method: GET
+        url: 'http://www.worldcat.org/oclc/904652996.jsonld'
+        headers:
+            Host: www.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '307'
+            message: 'Temporary Redirect'
+        headers:            
+            Server: Apache
+            Location: 'http://experiment.worldcat.org/oclc/904652996.jsonld'
+            Content-Length: '0'
+            P3P: 'CP="OCLC"'
+            Content-Type: text/plain
+            Date: 'Tue, 12 Sep 2017 22:05:13 GMT'
+-
+    request:
+        method: GET
+        url: 'http://www.worldcat.org/oclc/906212641.jsonld'
+        headers:
+            Host: www.worldcat.org
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.2.1 curl/7.54.0 PHP/5.6.31'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '307'
+            message: 'Temporary Redirect'
+        headers:            
+            Server: Apache
+            Location: 'http://experiment.worldcat.org/oclc/906212641.jsonld'
+            Content-Length: '0'
+            P3P: 'CP="OCLC"'
+            Content-Type: text/plain
+            Date: 'Tue, 12 Sep 2017 22:05:14 GMT'

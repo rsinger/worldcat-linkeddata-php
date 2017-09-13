@@ -35,6 +35,7 @@ trait Resource
             $url = $this->getId();
         }
         $url .= '.jsonld';
+
         $response = $this->getHttpClient()->get($url, ['Accept' => 'application/json']);
         if ($response->getStatusCode() === 200) {
             $this->setSourceData(json_decode($response->getBody(), true));
@@ -74,6 +75,4 @@ trait Resource
         }
         return Promise\settle($promises)->wait();
     }
-
-
 }

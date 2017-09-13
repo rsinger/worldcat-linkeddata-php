@@ -31,5 +31,4 @@ class XidResponse
     {
         return ['stat' => 'ok', 'list' => $this->manifestations];
     }
-
 }
