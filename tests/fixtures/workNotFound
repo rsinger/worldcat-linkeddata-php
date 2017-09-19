@@ -1,0 +1,105 @@
+
+-
+    request:
+        method: HEAD
+        url: 'http://www.worldcat.org/isbn/0321984242'
+        headers:
+            Host: www.worldcat.org
+            Accept-Encoding: null
+            User-Agent: worldcat-linkeddata-php/0.1
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '303'
+            message: 'See Other'
+        headers:
+            Date: 'Tue, 19 Sep 2017 16:29:42 GMT'
+            Server: Apache
+            Location: 'http://www.worldcat.org/title/human-geography-places-and-regions-in-global-context/oclc/881387295'
+            P3P: 'CP="OCLC"'
+            Content-Type: text/plain
+-
+    request:
+        method: GET
+        url: 'http://www.worldcat.org/oclc/881387295.jsonld'
+        headers:
+            Host: www.worldcat.org
+            Accept-Encoding: null
+            User-Agent: worldcat-linkeddata-php/0.1
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '307'
+            message: 'Temporary Redirect'
+        headers:
+            Date: 'Tue, 19 Sep 2017 16:29:43 GMT'
+            Server: Apache
+            Location: 'http://experiment.worldcat.org/oclc/881387295.jsonld'
+            Content-Length: '0'
+            P3P: 'CP="OCLC"'
+            Content-Type: text/plain
+-
+    request:
+        method: GET
+        url: 'http://experiment.worldcat.org/oclc/881387295.jsonld'
+        headers:
+            Host: experiment.worldcat.org
+            Accept-Encoding: null
+            User-Agent: worldcat-linkeddata-php/0.1
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Server: Apache-Coyote/1.1
+            Access-Control-Allow-Origin: '*'
+            Pragma: no-cache
+            Cache-Control: 'no-cache, no-store, max-age=0'
+            Expires: 'Thu, 01 Jan 1970 00:00:00 GMT'
+            Content-Type: application/ld+json;charset=UTF-8
+            Content-Language: en-US
+            Transfer-Encoding: chunked
+            Date: 'Tue, 19 Sep 2017 16:29:43 GMT'
+        body: "{\n  \"@graph\" : [ {\n    \"@id\" : \"http://dewey.info/class/304.2/e23/\",\n    \"@type\" : \"schema:Intangible\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/3768549144#Person/knox_paul_l\",\n    \"@type\" : \"schema:Person\",\n    \"familyName\" : \"Knox\",\n    \"givenName\" : \"Paul L.\",\n    \"name\" : \"Paul L. Knox\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/3768549144#Person/marston_sallie_a\",\n    \"@type\" : \"schema:Person\",\n    \"familyName\" : \"Marston\",\n    \"givenName\" : \"Sallie A.\",\n    \"name\" : \"Sallie A. Marston\"\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/3768549144#Topic/human_geography\",\n    \"@type\" : \"schema:Intangible\",\n    \"name\" : {\n      \"@language\" : \"en\",\n      \"@value\" : \"Human geography\"\n    }\n  }, {\n    \"@id\" : \"http://experiment.worldcat.org/entity/work/data/3768549144#Topic/kulturgeografi\",\n    \"@type\" : \"schema:Intangible\",\n    \"name\" : {\n      \"@language\" : \"en\",\n      \"@value\" : \"Kulturgeografi\"\n    }\n  }, {\n    \"@id\" : \"http://id.loc.gov/vocabulary/countries/mau\",\n    \"@type\" : \"schema:Place\",\n    \"identifier\" : \"mau\"\n  }, {\n    \"@id\" : \"http://worldcat.org/isbn/9780321984241\",\n    \"@type\" : \"schema:ProductModel\",\n    \"isbn\" : [ \"9780321984241\", \"0321984242\" ]\n  }, {\n    \"@id\" : \"http://www.worldcat.org/oclc/881387295\",\n    \"@type\" : [ \"schema:Book\", \"schema:CreativeWork\" ],\n    \"oclcnum\" : \"881387295\",\n    \"placeOfPublication\" : \"http://id.loc.gov/vocabulary/countries/mau\",\n    \"about\" : [ \"http://dewey.info/class/304.2/e23/\", \"http://experiment.worldcat.org/entity/work/data/3768549144#Topic/kulturgeografi\", \"http://experiment.worldcat.org/entity/work/data/3768549144#Topic/human_geography\" ],\n    \"bookEdition\" : \"Seventh edition.\",\n    \"bookFormat\" : \"bgn:PrintBook\",\n    \"contributor\" : \"http://experiment.worldcat.org/entity/work/data/3768549144#Person/marston_sallie_a\",\n    \"creator\" : \"http://experiment.worldcat.org/entity/work/data/3768549144#Person/knox_paul_l\",\n    \"datePublished\" : \"2016\",\n    \"description\" : [ {\n      \"@language\" : \"en\",\n      \"@value\" : \"Geography matters -- The changing global context -- Geographies of population and migration -- People and nature -- Cultural geographies -- Language, communication, and belief -- Interpreting places and landscapes -- Geographies of economic development -- Geographies of food and agriculture -- Political geographies -- Urbanization and the global urban system -- City spaces: urban structure.\"\n    }, {\n      \"@language\" : \"en\",\n      \"@value\" : \"\\\"Described as \\\"fresh, innovative, and intelligent,\\\" Human Geography: Places and Regions in Global Context is acclaimed for its global approach, conceptual rigor, engaging real-world applications, and outstanding visual program. Knox and Marston foster awareness of current issues and developing trends from a geographic perspective, and provide a solid foundation in the fundamentals of human geography. The authors integrate compelling local, regional, and global viewpoints to give meaning to people and places. By providing access to the latest ideas, concepts, and theories, the text deepens students' understanding of the interdependence of places and regions in a globalizing world. The Seventh Edition extends Knox/Marston's modern approach, integrating new technology as well as new visual and thematic features relevant to human geography today.\\\" -- Publisher's description\"\n    } ],\n    \"exampleOfWork\" : \"http://worldcat.org/entity/work/id/3768549144\",\n    \"inLanguage\" : \"en\",\n    \"name\" : {\n      \"@language\" : \"en\",\n      \"@value\" : \"Human geography : places and regions in global context\"\n    },\n    \"productID\" : \"881387295\",\n    \"workExample\" : \"http://worldcat.org/isbn/9780321984241\",\n    \"describedby\" : \"http://www.worldcat.org/title/-/oclc/881387295\"\n  }, {\n    \"@id\" : \"http://www.worldcat.org/title/-/oclc/881387295\",\n    \"@type\" : [ \"genont:ContentTypeGenericResource\", \"genont:InformationResource\" ],\n    \"inDataset\" : \"http://purl.oclc.org/dataset/WorldCat\",\n    \"about\" : \"http://www.worldcat.org/oclc/881387295\",\n    \"dateModified\" : \"2017-09-02\"\n  } ],\n  \"@context\" : {\n    \"about\" : {\n      \"@id\" : \"http://schema.org/about\",\n      \"@type\" : \"@id\"\n    },\n    \"datePublished\" : \"http://schema.org/datePublished\",\n    \"name\" : \"http://schema.org/name\",\n    \"exampleOfWork\" : {\n      \"@id\" : \"http://schema.org/exampleOfWork\",\n      \"@type\" : \"@id\"\n    },\n    \"oclcnum\" : \"http://purl.org/library/oclcnum\",\n    \"description\" : \"http://schema.org/description\",\n    \"creator\" : {\n      \"@id\" : \"http://schema.org/creator\",\n      \"@type\" : \"@id\"\n    },\n    \"bookFormat\" : {\n      \"@id\" : \"http://schema.org/bookFormat\",\n      \"@type\" : \"@id\"\n    },\n    \"productID\" : \"http://schema.org/productID\",\n    \"workExample\" : {\n      \"@id\" : \"http://schema.org/workExample\",\n      \"@type\" : \"@id\"\n    },\n    \"describedby\" : {\n      \"@id\" : \"http://www.w3.org/2007/05/powder-s#describedby\",\n      \"@type\" : \"@id\"\n    },\n    \"contributor\" : {\n      \"@id\" : \"http://schema.org/contributor\",\n      \"@type\" : \"@id\"\n    },\n    \"inLanguage\" : \"http://schema.org/inLanguage\",\n    \"placeOfPublication\" : {\n      \"@id\" : \"http://purl.org/library/placeOfPublication\",\n      \"@type\" : \"@id\"\n    },\n    \"bookEdition\" : \"http://schema.org/bookEdition\",\n    \"dateModified\" : \"http://schema.org/dateModified\",\n    \"inDataset\" : {\n      \"@id\" : \"http://rdfs.org/ns/void#inDataset\",\n      \"@type\" : \"@id\"\n    },\n    \"isbn\" : \"http://schema.org/isbn\",\n    \"familyName\" : \"http://schema.org/familyName\",\n    \"givenName\" : \"http://schema.org/givenName\",\n    \"identifier\" : \"http://purl.org/dc/terms/identifier\",\n    \"schema\" : \"http://schema.org/\",\n    \"genont\" : \"http://www.w3.org/2006/gen/ont#\",\n    \"wdrs\" : \"http://www.w3.org/2007/05/powder-s#\",\n    \"xsd\" : \"http://www.w3.org/2001/XMLSchema#\",\n    \"library\" : \"http://purl.org/library/\",\n    \"void\" : \"http://rdfs.org/ns/void#\",\n    \"rdf\" : \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\",\n    \"bgn\" : \"http://bibliograph.net/\",\n    \"pto\" : \"http://www.productontology.org/id/\",\n    \"dcterms\" : \"http://purl.org/dc/terms/\"\n  }\n}"
+-
+    request:
+        method: HEAD
+        url: 'http://worldcat.org/entity/work/id/3768549144'
+        headers:
+            Host: worldcat.org
+            Accept-Encoding: null
+            User-Agent: worldcat-linkeddata-php/0.1
+            Accept: null
+    response:
+        status:
+            http_version: '1.0'
+            code: '303'
+            message: 'See Other'
+        headers:            
+            Connection: Keep-Alive
+            Content-Length: '0'
+            Location: 'http://experiment.worldcat.org/entity/work/data/3768549144'
+-
+    request:
+        method: GET
+        url: 'http://experiment.worldcat.org/entity/work/data/3768549144.jsonld'
+        headers:
+            Host: experiment.worldcat.org
+            Accept-Encoding: null
+            User-Agent: worldcat-linkeddata-php/0.1
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '404'
+            message: 'Not Found'
+        headers:
+            Server: Apache-Coyote/1.1
+            Content-Type: text/html;charset=utf-8
+            Content-Length: '985'
+            Date: 'Tue, 19 Sep 2017 16:33:13 GMT'
+        body: '<html><head><title> - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - /entity/work/data/3768549144 not found</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>/entity/work/data/3768549144 not found</u></p><p><b>description</b> <u>The requested resource is not available.</u></p><HR size="1" noshade="noshade"><h3></h3></body></html>'

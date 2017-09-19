@@ -317,4 +317,37 @@ class ManifestationTest extends TestCase
 
         $this->assertSame($work, $manifestation->getWork());
     }
+
+    public function testDoNotCacheWorkNotFound()
+    {
+        \VCR\VCR::insertCassette('workNotFound');
+        $manifestation = new Manifestation();
+        $manifestation->findByIsbn('0321984242');
+
+        try {
+            $manifestation->getWork();
+        } catch (\GuzzleHttp\Exception\ClientException $e) {
+            $expectedMessage = <<<END
+Client error: `GET http://experiment.worldcat.org/entity/work/data/3768549144.jsonld` resulted in a `404 Not Found` response:
+<html><head><title> - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-colo (truncated...)
+END;
+            $this->setExpectedException(
+                '\GuzzleHttp\Exception\ClientException',
+                $expectedMessage
+            );
+            $manifestation->getWork();
+        }
+        \VCR\VCR::eject();
+    }
+
+    public function testDefaultLanguageNotAvailableForProperty()
+    {
+        \VCR\VCR::insertCassette('defaultLanguageNotAvailableForProperty');
+        $manifestation = new Manifestation();
+        $manifestation->findByOclcNumber('54014437');
+
+        $this->assertEquals(['en'], $manifestation->getLanguagePreferences());
+        $this->assertEquals(['阿鐸戲劇文集', '劇場及其複象 : 阿鐸戲劇文集 = Le théâtre et son double'], $manifestation->name);
+        \VCR\VCR::eject();
+    }
 }

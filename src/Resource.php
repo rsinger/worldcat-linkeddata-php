@@ -4,6 +4,7 @@ namespace WorldCatLD;
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\Promise;
 use WorldCatLD\exceptions\ResourceNotFoundException;
+use GuzzleHttp\Pool;
 
 /**
  * Class Resource
@@ -75,11 +76,29 @@ trait Resource
     private function fetchConcurrentResources(array $ids)
     {
         $client = $this->getHttpClient();
-        $promises = [];
-        foreach ($ids as $id) {
-            $promises[$id] = $client->getAsync($id . '.jsonld', ['Accept' => 'application/ld+json']);
-        }
-        return Promise\settle($promises)->wait();
+
+        $requests = function () use ($client, $ids) {
+            foreach ($ids as $id) {
+                yield function () use ($client, $id) {
+                    return $client->getAsync($id . '.jsonld', ['Accept' => 'application/ld+json']);
+                };
+            }
+        };
+
+        $results = [];
+
+        $pool = new Pool(
+            $client,
+            $requests(),
+            [
+                'concurrency' => 5,
+                'fulfilled' => function ($response, $index) use ($ids, &$results) {
+                    $results[$ids[$index]] = ['state' => 'fulfilled', 'value' => $response];
+                }
+            ]
+        );
+        $pool->promise()->wait(true);
+        return $results;
     }
 
     /**
