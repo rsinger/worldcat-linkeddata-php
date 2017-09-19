@@ -3,4 +3,4 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 \VCR\VCR::turnOn();
-\VCR\VCR::configure()->setMode('once');
+\VCR\VCR::configure()->setMode('new_episodes');

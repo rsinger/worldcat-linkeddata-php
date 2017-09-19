@@ -86,9 +86,10 @@ class Manifestation
     {
         if (!isset($this->work)) {
             $workId = $this->getWorkId();
-            $this->work = $this->createWork();
-            $this->work->findById($workId);
-            $this->work->addExample($this);
+            $work = $this->createWork();
+            $work->findById($workId);
+            $work->addExample($this);
+            $this->work = $work;
         }
         return $this->work;
     }

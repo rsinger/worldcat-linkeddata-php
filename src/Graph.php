@@ -157,6 +157,7 @@ trait Graph
                     $values[] = $this->hydratePropertyValue($value);
                 }
             }
+
             if (!empty($langVals)) {
                 foreach ($languages as $language) {
                     if (isset($langVals[$language])) {
@@ -164,7 +165,16 @@ trait Graph
                         break;
                     }
                 }
+                if (empty($values)) {
+                    foreach ($langVals as $language => $vals) {
+                        if (!empty($vals)) {
+                            $values = $vals;
+                            break;
+                        }
+                    }
+                }
             }
+
             if (count($values) === 1) {
                 return $values[0];
             }
