@@ -350,4 +350,23 @@ END;
         $this->assertEquals(['阿鐸戲劇文集', '劇場及其複象 : 阿鐸戲劇文集 = Le théâtre et son double'], $manifestation->name);
         \VCR\VCR::eject();
     }
+
+    public function testMultipleISBNs()
+    {
+        \VCR\VCR::insertCassette('multipleISBNsForManifestation');
+        $manifestation = new Manifestation();
+        $manifestation->findByOclcNumber('792932886');
+        $expectedIsbns = [
+            '9781847886842',
+            '1847886841',
+            '9781847886859',
+            '184788685X',
+            '9781847888402',
+            '1847888402',
+            '9781847888419',
+            '1847888410'
+        ];
+        $this->assertEquals($expectedIsbns, $manifestation->getIsbns());
+        \VCR\VCR::eject();
+    }
 }

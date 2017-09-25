@@ -130,12 +130,13 @@ class Manifestation
      */
     public function getIsbns()
     {
+        $isbns = [];
         foreach ($this->graph as $graph) {
-            if (isset($graph['isbn'])) {
-                return $graph['isbn'];
+            if (isset($graph['isbn']) && is_array($graph['isbn'])) {
+                $isbns = array_merge($isbns, $graph['isbn']);
             }
         }
-        return [];
+        return $isbns;
     }
 
     protected function createWork()
