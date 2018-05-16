@@ -117,7 +117,7 @@ class Work
     {
         $subjectData = $this->getSubjectData();
         $workExampleIds = isset($subjectData['workExample']) ? $subjectData['workExample'] : [];
-        return array_diff($workExampleIds, array_keys($this->examples));
+        return array_values(array_diff($workExampleIds, array_keys($this->examples)));
     }
 
     /**
