@@ -125,7 +125,6 @@ class Work
         } else {
             $workExampleIds = [];
         }
-        $workExampleIds = isset($subjectData['workExample']) ? $subjectData['workExample'] : [];
         return array_values(array_diff($workExampleIds, array_keys($this->examples)));
     }
 
