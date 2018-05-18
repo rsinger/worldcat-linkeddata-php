@@ -75,6 +75,8 @@ trait Resource
      */
     private function fetchConcurrentResources(array $ids)
     {
+        // Ensure our array is indexed sequentially
+        $ids = array_values($ids);
         $client = $this->getHttpClient();
 
         $requests = function () use ($client, $ids) {

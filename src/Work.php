@@ -116,8 +116,16 @@ class Work
     public function getUnresolvedWorkExamples()
     {
         $subjectData = $this->getSubjectData();
-        $workExampleIds = isset($subjectData['workExample']) ? $subjectData['workExample'] : [];
-        return array_diff($workExampleIds, array_keys($this->examples));
+        if (isset($subjectData['workExample'])) {
+            if (is_array($subjectData['workExample'])) {
+                $workExampleIds = $subjectData['workExample'];
+            } else {
+                $workExampleIds = [$subjectData['workExample']];
+            }
+        } else {
+            $workExampleIds = [];
+        }
+        return array_values(array_diff($workExampleIds, array_keys($this->examples)));
     }
 
     /**
